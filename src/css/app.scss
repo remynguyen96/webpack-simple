@@ -1,0 +1,22 @@
+@import "colors";
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import "~materialize-css/sass/components/color";
+$primary-color: color("indigo", "base");
+$secondary-color: color("green", "accent-4");
+$roboto-font-path: "~materialize-css/fonts/roboto/";
+@import "~materialize-css/sass/materialize.scss";
+
+
+#randomInt {
+  background-color: $main;
+  border: 1px solid black;
+  color: white;
+  padding: 5px;
+}
+
+#randomRange {
+  background-color: $secondary;
+  border: 1px solid black;
+  color: white;
+  padding: 5px;
+}
