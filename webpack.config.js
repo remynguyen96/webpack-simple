@@ -3,12 +3,15 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CleanWebpackPlugin = require('clean-webpack-plugin');
 var webpack = require('webpack');
+
 var extractPlugin = new ExtractTextPlugin({
    filename: 'app.bundle.css'
 });
 
 module.exports = {
-    entry: './src/js/app.js',
+    entry: {
+      app: './src/js/app.js'
+    },
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'app.bundle.js',
@@ -63,14 +66,27 @@ module.exports = {
                     }
                 ]
             },
+            {
+                test: /\.html$/,
+                use: [
+                  {
+                      loader: 'file-loader',
+                      options: {
+                          name: '[name].[ext]'
+                      }
+                    }
+                ],
+                exclude: path.resolve(__dirname, 'src/index.html')
+            },
         ]
     },
     plugins: [
         extractPlugin,
         new HtmlWebpackPlugin({
-          title: 'Webpack Simple',
+          filename: 'index.html',
           hash: true,
           template: 'src/index.html',
+          // chunks:[],
         }),
         new webpack.ProvidePlugin({
           $: 'jquery',

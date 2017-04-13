@@ -1,6 +1,11 @@
 import '../css/app.scss';
+
+import '../page.html';
+
 import 'materialize-css/dist/js/materialize';
+
 import { RandomGenerator } from './random-generator';
+
 import './functions.js';
 
 const outputParagraph = document.querySelector('#outputParagraph');
