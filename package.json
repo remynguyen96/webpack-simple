@@ -9,7 +9,7 @@
     "build:prod": "webpack -p"
   },
   "keywords": [],
-  "author": "Maximilian Schwarzmüller",
+  "author": "Remy Nguyen",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.24.0",
