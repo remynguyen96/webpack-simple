@@ -1,31 +1,41 @@
 <!doctype html>
 <html lang="en">
+<!-- <html lang="en" manifest="test.appcache"> -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Webpack Simple</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Webpack Simple</title>
+
 </head>
 <body>
-<div class="container">
-  <div class="row">
-    <div class="col m12">
-      <div>
-          <img src="img/webpack-logo.png" alt="Webpack">
-      </div>
-      <button id="randomInt">A random Integer</button>
-      <button id="randomRange">A random Integer in a Range</button>
-      <p id="outputParagraph">You can't see this all the time</p>
+  <header class="header">
+    <h1 class="header__title">Weather PWA</h1>
+    <button id="butRefresh" class="headerButton"></button>
+    <button id="butAdd" class="headerButton"></button>
+  </header>
 
-      <h4 class="green accent-4">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae porro unde assumenda, pariatur consectetur culpa fugit cumque veritatis! Sit eveniet quos, labore omnis facilis nobis asperiores at quam, assumenda aliquam.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae porro unde assumenda, pariatur consectetur culpa fugit cumque veritatis! Sit eveniet quos, labore omnis facilis nobis asperiores at quam, assumenda aliquam.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae porro unde assumenda, pariatur consectetur culpa fugit cumque veritatis! Sit eveniet quos, labore omnis facilis nobis asperiores at quam, assumenda aliquam.
-      </h4>
-
+  <main class="main">
+    <div class="card cardTemplate weather-forecast" hidden>
+    . . .
     </div>
+  </main>
+
+  <div class="dialog-container">
+  . . .
   </div>
-</div>
+
+  <div class="loader">
+    <svg viewBox="0 0 32 32" width="32" height="32">
+      <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
+    </svg>
+  </div>
+
+
+
+
+
 
 </body>
 </html>

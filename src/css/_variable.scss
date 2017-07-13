@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import "~materialize-css/sass/components/color";
+$primary-color: color("indigo", "base");
+$secondary-color: color("green", "accent-4");
+$roboto-font-path: "~materialize-css/fonts/roboto/";
+@import "~materialize-css/sass/materialize.scss";
+
+$bg-primary: #5822dd;
+$bg-warn: #ff3e3e;
+$bg-accent: #42cd7a;
