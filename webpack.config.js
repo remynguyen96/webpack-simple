@@ -41,7 +41,7 @@ module.exports = {
                 use: ['html-loader']
             },
             {
-                test: /\.(jpg|jpeg|png|gif|svg)$/,
+                test: /\.(jpg|jpeg|png|gif|svg|ico)$/,
                 use: [
                     {
                         loader: 'file-loader',
@@ -66,18 +66,6 @@ module.exports = {
                     }
                 ]
             },
-            {
-                test: /\.html$/,
-                use: [
-                  {
-                      loader: 'file-loader',
-                      options: {
-                          name: '[name].[ext]'
-                      }
-                    }
-                ],
-                exclude: path.resolve(__dirname, 'src/index.html')
-            },
         ]
     },
     plugins: [
@@ -87,6 +75,14 @@ module.exports = {
           hash: true,
           template: 'src/index.html',
           // chunks:[],
+        }),
+        new HtmlWebpackPlugin({
+          filename: 'form.html',
+          template: 'src/form.html',
+        }),
+        new HtmlWebpackPlugin({
+          filename: 'page.html',
+          template: 'src/page.html',
         }),
         new webpack.ProvidePlugin({
           $: 'jquery',

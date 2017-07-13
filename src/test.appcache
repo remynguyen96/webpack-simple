@@ -1,0 +1,21 @@
+CACHE MANIFEST
+#DATE 13-07-2017
+
+CACHE:
+# pages
+index.html
+
+# styles & scripts
+css/theme.css
+js/jquery.min.js
+js/default.js
+
+# images
+/favicon.ico
+images/logo.png
+
+NETWORK:
+login.php
+
+FALLBACK:
+/html/ /offline.html

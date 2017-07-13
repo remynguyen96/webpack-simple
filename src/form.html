@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form Data</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+
+      <div class="col m6 offset-m3">
+        <table class="bordered">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+
+          <tbody id='customers'>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col m8 offset-m2">
+        <h4 class="center-align">Form Add Customers</h4>
+
+        <form action='' role='form' onsubmit="addCustomers()">
+          <div class="col m12 input-field">
+            <input type="text" id='name' autocomplete="off">
+            <label for="name">Name</label>
+          </div>
+
+          <div class="col m12 input-field">
+            <input type="email" id='email' autocomplete="off">
+            <label for="email">Email</label>
+          </div>
+
+          <div class="col m12 center-align">
+            <button type="submit" class="btn waves-effect waves-light">
+            Add Customers
+          </button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
