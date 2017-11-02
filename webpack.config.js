@@ -1,10 +1,10 @@
-var path = require('path');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var CleanWebpackPlugin = require('clean-webpack-plugin');
-var webpack = require('webpack');
+const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const webpack = require('webpack');
 
-var extractPlugin = new ExtractTextPlugin({
+const extractPlugin = new ExtractTextPlugin({
    filename: 'app.bundle.css'
 });
 
@@ -47,8 +47,8 @@ module.exports = {
                         loader: 'file-loader',
                         options: {
                             name: '[name].[ext]',
-                            outputPath: 'img/',
-                            publicPath: 'img/'
+                            outputPath: 'images/',
+                            publicPath: 'images/'
                         }
                     }
                 ]
@@ -72,13 +72,9 @@ module.exports = {
         extractPlugin,
         new HtmlWebpackPlugin({
           filename: 'index.html',
-          hash: true,
+          hash: false,
           template: 'src/index.html',
           // chunks:[],
-        }),
-        new HtmlWebpackPlugin({
-          filename: 'form.html',
-          template: 'src/form.html',
         }),
         new HtmlWebpackPlugin({
           filename: 'page.html',
