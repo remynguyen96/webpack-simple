@@ -1,10 +1,11 @@
 import '../css/app.scss';
+import '../css/app.less';
 import * as WebFont from 'webfontloader';
 WebFont.load({
     custom: {
-        families: ['Covered By Your Grace'],
-        urls: ['https://fonts.googleapis.com/css?family=Niconne:400&subset=latin']
-    },
+        families: ['Roboto'],
+        urls: ['https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,vietnamese']
+    },   
 });
 // import * as FastClick from 'fastclick';
 // import './functions.js';

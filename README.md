@@ -10,8 +10,8 @@ This is webpack simple for frontend.
   
   Step 2: Run : npm install
   
-  Step 3: Run : npm run build or 
+  Step 3: Run : npm run dev or
   
-Maybe you can run npm run build:prod to build folder dist. 
+Maybe you can run npm run build to build folder dist.
 
 Oh yeah enjoy it now !

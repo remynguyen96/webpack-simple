@@ -37,6 +37,16 @@ module.exports = {
                 })
             },
             {
+                test: /\.less$/,
+                use: extractPlugin.extract({
+                    use: ['css-loader', 'less-loader']
+                })
+            },
+            {
+                test: /\.pug$/,
+                use: 'pug-loader'
+            },
+            {
                 test: /\.html$/,
                 use: ['html-loader']
             },
@@ -73,12 +83,8 @@ module.exports = {
         new HtmlWebpackPlugin({
           filename: 'index.html',
           hash: false,
-          template: 'src/index.html',
+          template: 'src/index.pug',
           // chunks:[],
-        }),
-        new HtmlWebpackPlugin({
-          filename: 'page.html',
-          template: 'src/page.html',
         }),
         new webpack.ProvidePlugin({
           $: 'jquery',
