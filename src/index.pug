@@ -11,20 +11,20 @@ html
         - var url ='http://localhost:8080/'
         h1(class='container') Webpack 2 and Hot Module Reloading
         p(class='p-basic' id='good') lorem
-        a.hehe#demo.classne(href=url + 'good') dede rocket io
+        a.btnLess#demo.classne(href=url + 'good') dede rocket io
         - url = 'good'
-        a(href='goodjob'+ url) demo2
+        a.btnLess2(href='goodjob'+ url) demo2
         -var btnClass = 'btn'
         button(type='button' class=`${btnClass} btn1`)  button1
         button(type='button' class=`${btnClass} btn2`)  button2
-        div(escaped="<code>") test
-        div(unescaped="<code>") test
+        div(escaped="<code>") <strong>examble about escaped</strong>
+        div(unescaped="<code>") <strong>examble about unescaped</strong>
         p= `good job men with button is ${btnClass}`
         - var url = 'test'
         //- @Description: params code demo !!!!
-        // @Description: params code demo !!!!
-        a(class={active: url === '/test'} href=url) test
-        a(class={active: url === 'test'} href=url) /test
+        // @Description: params code demo !!!!                     k
+        a.divLess(class={active: url === '/test'} href=url) test
+        a.divLess2(class={active: url === 'test'} href=url) /test
         div#demo1(data-test='good')&attributes({'date-test2': 'good2'}).demo2 good
         div#demo2(data-test='good' data-test2='good2').demo2 good2
         - var friends = 0
@@ -48,6 +48,10 @@ html
           | what do you like in your free time and why do you make ???
         p today i'll going to talk about the topic <br> Success
         include footer
+        h2(style={'text-align': 'center', color:'#FF7C20'}) Aspect Ratio Hack
+        div.aspect-ratio
+            div.aspec-wrapper
+                h1  Supercharged in 16 : 9
         //- script
             include js/functions.js
 
