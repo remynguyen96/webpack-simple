@@ -1,60 +1,15 @@
-doctype html
-html
-    meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
-    meta(http-equiv="X-UA-Compatible" content="ie=edge")
-    title Pug Basic
-    style
-        include css/test.css
-    body
-        include header
-        - var url ='http://localhost:8080/'
-        h1(class='container') Webpack 2 and Hot Module Reloading
-        p(class='p-basic' id='good') lorem
-        img.logo(src="images/webpack-logo.png")
-        a.btnLess#demo.classne(href=url + 'good') dede rocket io
-        - url = 'good'
-        a.btnLess2(href='goodjob'+ url) demo2
-        -var btnClass = 'btn'
-        button(type='button' class=`${btnClass} btn1`)  button1
-        button(type='button' class=`${btnClass} btn2`)  button2
-        div(escaped="<code>") <strong>examble about escaped</strong>
-        div(unescaped="<code>") <strong>examble about unescaped</strong>
-        p= `good job men with button is ${btnClass}`
-        - var url = 'test'
-        //- @Description: params code demo !!!!
-        // @Description: params code demo !!!!                     k
-        a.divLess(class={active: url === '/test'} href=url) test
-        a.divLess2(class={active: url === 'test'} href=url) /test
-        div#demo1(data-test='good')&attributes({'date-test2': 'good2'}).demo2 good
-        div#demo2(data-test='good' data-test2='good2').demo2 good2
-        - var friends = 0
-        case friends
-            when 0
-                - break
-            when 1
-                p you have very few friends
-            default
-                p you have #{friends} friends
-        - var arr = ['unit 1','unit 2','unit 3','unit 4']
-        ul
-        - for (var x = 0; x < arr.length; x++)
-            li: a(href=arr[x]) item{x}
-        each itemArr in arr
-            li(class=itemArr)
-                a(href=itemArr)=itemArr
-        a#hehe(href='http://localhost:8080/' target='_blank'): img(src='https://www.w3schools.com/css/trolltunga.jpg')
-        p
-          | goodmorning guys, today i'll going to talk about the topic,
-          | what do you like in your free time and why do you make ???
-        p today i'll going to talk about the topic <br> Success
-        include footer
-        h2(style={'text-align': 'center', color:'#FF7C20'}) Aspect Ratio Hack
-        div.aspect-ratio
-            div.aspec-wrapper
-                h1  Supercharged in 16 : 9
-        //- script
-            include js/functions.js
+extends layouts/index
+block configSite
+    -
+        var config = {
+        title: 'Challenge 1'
+        }
+block main
+    // Today i'll going to challenge first is make handle bar follow step 1 -> 2 -> 3.
+    .container
+        .nav-bar
+            - for(var i = 1; i <= 3; i++)
+              li.it-bar(data-step=`${i}`): a.link-bar(href=`step-${i}`) Step #{i}
 
 
-
+block footer

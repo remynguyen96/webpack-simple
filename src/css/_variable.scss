@@ -1,6 +1,27 @@
 @import '~normalize.css';
 //@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 //@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+$smallDevice: "only screen and (min-width: 320px)";
+$averageDevice: "only screen and (min-width: 480px)";
+$tablets: "only screen and (min-width: 768px)";
+$miniDesktop: "only screen and (min-width: 992px)";
+$largeDesktop: "only screen and (min-width: 1200px)";
+@mixin multiTransition($variable) {
+  -webkit-transition: $variable;
+  -o-transition: $variable;
+  -moz-transition: $variable;
+  transition: $variable;
+}
+@mixin multiTranform($variable) {
+  -webkit-transform: $variable;
+  -o-transform: $variable;
+  -ms-transform: $variable;
+  -moz-transform: $variable;
+  transform: $variable;
+}
+html{
+  font-size: 16px;
+}
 body {
   font-family: 'Roboto', sans-serif;
 }
