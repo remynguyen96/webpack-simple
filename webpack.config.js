@@ -83,7 +83,7 @@ module.exports = {
         new HtmlWebpackPlugin({
           filename: 'index.html',
           hash: false,
-          template: 'src/index.pug',
+          template: 'src/challenge3.pug',
           // chunks:[],
         }),
         new HtmlWebpackPlugin({
