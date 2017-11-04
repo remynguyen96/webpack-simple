@@ -86,9 +86,11 @@ module.exports = {
           template: 'src/index.pug',
           // chunks:[],
         }),
-        new webpack.ProvidePlugin({
-          $: 'jquery',
-          jQuery: 'jquery'
+        new HtmlWebpackPlugin({
+            filename: 'page.html',
+            hash: false,
+            template: 'src/page.html',
+            // chunks:[],
         }),
         new CleanWebpackPlugin(['dist'])
     ]

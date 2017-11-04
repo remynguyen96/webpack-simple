@@ -1,12 +1,29 @@
 import '../css/app.scss';
 import '../css/app.less';
 import * as WebFont from 'webfontloader';
+import jQuery from 'jquery';
+window.$ = jQuery;
+function print_r(el) {
+    console.log(el);
+}
 WebFont.load({
     custom: {
         families: ['Roboto'],
         urls: ['https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,vietnamese']
     },   
 });
+// $(function() {
+// });
+let image = $('#hehe img');
+$("#hehe").click((e) => {
+    e.preventDefault();
+    image.animate({height: 'toggle'})
+    setTimeout(() => {
+        image.animate({height: 'toggle'})
+    }, 3000);
+});
+
+
 // import * as FastClick from 'fastclick';
 // import './functions.js';
 // window.addEventListener('load', function () {

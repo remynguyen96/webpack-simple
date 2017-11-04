@@ -1,5 +1,41 @@
 @import "variable";
-$demo: 18px;
+
+$smallDevice: "only screen and (min-width: 320px)";
+$averageDevice: "only screen and (min-width: 480px)";
+$tablets: "only screen and (min-width: 768px)";
+$miniDesktop: "only screen and (min-width: 992px)";
+$largeDesktop: "only screen and (min-width: 1200px)";
 body {
-  font-size: $demo;
+  font-size: 18px;
 }
+/*==========  Mobile First Method  ==========*/
+//@media only screen and (min-width: $smallDevice) {
+@media #{$smallDevice} {
+  .logo {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+}
+
+@media #{$averageDevice} {
+
+}
+
+@media #{$tablets} {
+
+}
+
+@media #{$miniDesktop} {
+
+}
+
+@media #{$largeDesktop} {
+  /* Only do logo animation on desktop, otherwise don't bother */
+  .logo {
+    width: 200px;
+    height: 100px;
+    display: block;
+    margin: 15px auto;
+  }
+}
+

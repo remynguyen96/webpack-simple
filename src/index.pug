@@ -11,6 +11,7 @@ html
         - var url ='http://localhost:8080/'
         h1(class='container') Webpack 2 and Hot Module Reloading
         p(class='p-basic' id='good') lorem
+        img.logo(src="images/webpack-logo.png")
         a.btnLess#demo.classne(href=url + 'good') dede rocket io
         - url = 'good'
         a.btnLess2(href='goodjob'+ url) demo2
@@ -42,7 +43,7 @@ html
         each itemArr in arr
             li(class=itemArr)
                 a(href=itemArr)=itemArr
-        a(href='http://localhost:8080/' target='_blank'): img(src='https://www.w3schools.com/css/trolltunga.jpg')
+        a#hehe(href='http://localhost:8080/' target='_blank'): img(src='https://www.w3schools.com/css/trolltunga.jpg')
         p
           | goodmorning guys, today i'll going to talk about the topic,
           | what do you like in your free time and why do you make ???
