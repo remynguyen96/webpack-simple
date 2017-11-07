@@ -98,5 +98,11 @@ sudo unzip -o icons.zip -d icons
 sudo gparted
 xem ổ cứng
 
+default zsh for terminal
+chsh -s $(which zsh)
+sudo nano ~/.bashrc
+exec zsh (add top file)
+https://github.com/bhilburn/powerlevel9k (theme for zsh)
+
 
 
