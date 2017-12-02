@@ -11,13 +11,13 @@ const extractPlugin = new ExtractTextPlugin({
 module.exports = {
     entry: {
         app: './src/js/app.js',
-        homepage: './src/css/homepage.scss',
-        architecture: './src/css/architecture.scss',
-        career: './src/css/career.scss',
-        contact: './src/css/contact.scss',
-        darkhorse: './src/css/darkhorse.scss',
-        info: './src/css/info.scss',
-        portfolio: './src/css/portfolio.scss',
+        homepage: './src/js/homepage.js',
+        architecture: './src/js/architecture.js',
+        career: './src/js/career.js',
+        contact: './src/js/contact.js',
+        darkhorse: './src/js/darkhorse.js',
+        info: './src/js/info.js',
+        portfolio: './src/js/portfolio.js',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
