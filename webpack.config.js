@@ -5,17 +5,23 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
 
 const extractPlugin = new ExtractTextPlugin({
-   filename: 'app.bundle.css'
+    filename: 'css/[name].bundle.css'
 });
 
 module.exports = {
     entry: {
-      app: './src/js/app.js'
+        app: './src/js/app.js',
+        homepage: './src/css/homepage.scss',
+        architecture: './src/css/architecture.scss',
+        career: './src/css/career.scss',
+        contact: './src/css/contact.scss',
+        darkhorse: './src/css/darkhorse.scss',
+        info: './src/css/info.scss',
+        portfolio: './src/css/portfolio.scss',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'app.bundle.js',
-        // publicPath: '/dist'
+        filename: 'js/[name].bundle.js',
     },
     module: {
         rules: [
@@ -25,7 +31,7 @@ module.exports = {
                     {
                         loader: 'babel-loader',
                         options: {
-                            presets: ['es2015']
+                            presets: ["env", "stage-3"],
                         }
                     }
                 ]
@@ -37,18 +43,8 @@ module.exports = {
                 })
             },
             {
-                test: /\.less$/,
-                use: extractPlugin.extract({
-                    use: ['css-loader', 'less-loader']
-                })
-            },
-            {
                 test: /\.pug$/,
-                use: 'pug-loader'
-            },
-            {
-                test: /\.html$/,
-                use: ['html-loader']
+                use: ['pug-loader']
             },
             {
                 test: /\.(jpg|jpeg|png|gif|svg|ico)$/,
@@ -79,19 +75,51 @@ module.exports = {
         ]
     },
     plugins: [
+        new CleanWebpackPlugin(['dist'],{
+            watch: true,
+        }),
         extractPlugin,
         new HtmlWebpackPlugin({
-          filename: 'index.html',
-          hash: false,
-          template: 'src/challenge3.pug',
-          // chunks:[],
+            inject: true,
+            chunks: ['homepage', 'app'],
+            filename: 'index.html',
+            template: './src/homepage.pug',
         }),
         new HtmlWebpackPlugin({
-            filename: 'page.html',
-            hash: false,
-            template: 'src/page.html',
-            // chunks:[],
+            inject: true,
+            chunks: ['architecture', 'app'],
+            filename: 'architecture.html',
+            template: './src/architecture.pug',
         }),
-        new CleanWebpackPlugin(['dist'])
+        new HtmlWebpackPlugin({
+            inject: true,
+            chunks: ['career', 'app'],
+            filename: 'career.html',
+            template: './src/career.pug',
+        }),
+        new HtmlWebpackPlugin({
+            inject: true,
+            chunks: ['contact', 'app'],
+            filename: 'contact.html',
+            template: './src/contact.pug',
+        }),
+        new HtmlWebpackPlugin({
+            inject: true,
+            chunks: ['darkhorse', 'app'],
+            filename: 'darkhorse.html',
+            template: './src/darkhorse.pug',
+        }),
+        new HtmlWebpackPlugin({
+            inject: true,
+            chunks: ['info', 'app'],
+            filename: 'info.html',
+            template: './src/info.pug',
+        }),
+        new HtmlWebpackPlugin({
+            inject: true,
+            chunks: ['portfolio', 'app'],
+            filename: 'portfolio.html',
+            template: './src/portfolio.pug',
+        }),
     ]
 };
