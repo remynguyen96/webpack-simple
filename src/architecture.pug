@@ -1,0 +1,27 @@
+extends layouts/index
+block titleSite
+    title Architecture
+block mainPage
+    div.person-detail
+        - for (var i = 1; i <= 16; i++ )
+            section.person-item
+                div.person-img
+                    a(href=`person-${i}`): img(src='images/person2.png' alt='person2' class='images-person')
+                    span.line-top
+                    span.line-bottom
+                    span.line-right
+                    span.line-left
+                div.person-info
+                    h3(class='person-info-name') Full name
+                    h3(class='person-info-job') Architecture
+                div.person-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi deserunt expedita impedit repudiandae rerum. Atque beatae dolorum fuga fugiat hic magnam maiores officia quibusdam repellendus repudiandae! Accusamus aliquid aspernatur enim!
+
+    div.icon-footer
+        img(src='images/Icon.png' alt='icon')
+
+
+
+
+
+
+

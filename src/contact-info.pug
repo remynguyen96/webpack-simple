@@ -1,0 +1,14 @@
+extends contact
+block titleSite
+    title Contact Info
+block contactPage
+    .contact-info
+        div.contact-info-images
+        div.contact-info-list
+            - for (var i = 1; i <= 4; i++ )
+                section.info-detail
+                    div.info-titl
+                        h3(class='info-title') interior design
+                        span(class='info-date') 20 September, 2017
+                    div.info-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consectetur consequuntur cum dicta ea eaque earum eligendi est explicabo harum itaque, iure, iusto libero neque nesciunt officia officiis quos ut!
+                    a(href='http://localhost:8080/contact-detail.html' class='info-more') Read more

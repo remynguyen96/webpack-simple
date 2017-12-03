@@ -1,32 +1,54 @@
 extends layouts/index
-block configSite
-    -
-        var config = {
-        title: 'Challenge 3'
-        }
-block main
-    nav#cd-vertical-nav
-        ul
-            mixin listDot(name, id)
-                li: a(href=`#section${id}` data-number=id)
-                    span.cd-dot
-                    span.cd-label=name
-            + listDot('Intro', 1)
-            + listDot('About', 2)
-            + listDot('Features', 3)
-            + listDot('Portfolio', 4)
-            + listDot('Pricing', 5)
-            + listDot('Contact', 6)
-    a.cd-nav-trigger.cd-img-replace Open navigation <span></span>
-    section#section1.cd-section
-        h1 Vertical Fixed Navigation
-        a.cd-scroll-down.cd-img-replace(href='#section2') scroll down
-    mixin sectionDes(id)
-        section#id.cd-section
-            p &ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;
-    +sectionDes('section2')
-    +sectionDes('section3')
-    +sectionDes('section4')
-    +sectionDes('section5')
-    +sectionDes('section6')
-block footer
+block titleSite
+    title Darkhorse
+block mainPage
+   div.darkhorse-site
+
+       div.horse-img-intro
+           img(src='images/image14.png' alt='darkhorse' class='horse-image')
+
+       div.horse-intro
+           h3(class='horse-intro-til') Our aims are simple
+           p(class='horse-intro-desc') Emerging from obscurity into prominence #[br] makes an unexpecting good showing results #[br] intersting qualities and abilitues that most do not #[br] know of - Yet
+           p(class='horse-intro-desc') #[strong We aspire to surprise & delight] #[br] We aspire to work closely and collaboratively with #[br] our clients to create architectural and interior design #[br] outcomes that excel in their creativity, #[br] completeness, providing exciting and vibrant #[br] designs that remain relevant in years to come.
+
+       div.horse-info
+           img(src='images/person1.png' alt='person1' class='author-image')
+           div.horse-info-author
+               h4(class='author-name') Andrew Richard Frost
+               span(class='author-position') Founder / Director
+           div.horse-info-desc
+               p(class='desc-txt') Andrew has successfully worked as design director #[br] with numerous international design practices in #[br] Australia, Europe, and Asia, for 25 years.
+               p(class='desc-txt') His works include leading designs for 3 consecutive #[br] Olympic Games, completing several signifciant #[br] mixed use and commercial developments, #[br] undertaking many hospitality commissions and #[br] leading an international retail design group.
+               p(class='desc-txt') In establishing Darkhorse Architecture, Andrew #[br] believes that there is missing design service that #[br] understands and balances all aspects of achieve #[br] high quality design and the client’s commercial #[br] requirements.
+               p(class='desc-txt') Andrew knows what it takes to deliver high quality #[br] project outcomes through all of the phases of #[br] creating and delivering projects. This is what #[br] Andrew aspries to bring to the exciting and dynamic #[br] economies of South East Asia.
+
+       div.detail-til
+           h4(class='detail-til-txt') Darkhorse Architecture
+           h4(class='detail-til-txt') Our Sector Experience
+       div.detail-desc
+           -
+               var experience = [
+                {title: 'COMMERCIAL', number: '01'},
+                {title: 'RESIDENTIAL', number: '02'},
+                {title: 'HOSPITALITY', number: '03'},
+                {title: 'URBAN DESIGN', number: '04'},
+                {title: 'SPORTS', number: '05'}
+               ]
+
+           section.detail-desc-info
+               each info1 in experience
+                     span(class='detail-desc-num')= info1.number
+           section.detail-desc-info2
+               each info2 in experience
+                      span(class='detail-desc-til')= info2.title
+   div.icon-footer
+       img(src='images/Icon.png' alt='icon')
+
+
+
+
+           
+       
+       
+

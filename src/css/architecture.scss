@@ -1,3 +1,238 @@
-body {
-  background: red;
+$ip5: "only screen and (max-width: 320px)";
+$galaxy: "only screen and (max-width: 375px)";
+$ip6: "only screen and (max-width: 414px)";
+$nexus: "only screen and (max-width: 600px)";
+$ipad: "only screen and (max-width: 768px)";
+$ipadPro: "only screen and (max-width: 1024px)";
+$laptopMini: "only screen and (max-width: 1280px)";
+$laptop: "only screen and (max-width: 1440px)";
+$fullHD: "only screen and (max-width: 1920px)";
+@mixin multiTransition($variable) {
+  -webkit-transition: $variable;
+  -o-transition: $variable;
+  -moz-transition: $variable;
+  transition: $variable;
+}
+
+@mixin multiTranform($variable) {
+  -webkit-transform: $variable;
+  -o-transform: $variable;
+  -ms-transform: $variable;
+  -moz-transform: $variable;
+  transform: $variable;
+}
+
+.person-detail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 25px 0 55px;
+}
+
+.person-item {
+  width: 270px;
+  height: 250px;
+  margin: 0 30px 40px 0;
+  position: relative;
+}
+
+.images-person {
+  width: 270px;
+  height: 250px;
+}
+
+.person-info {
+  position: absolute;
+  width: 90%;
+  height: 23px;
+  background: #FFFFFF;
+  bottom: 0;
+  left: 13px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &-name, &-job {
+    color: #000000;
+    font-size: 0.625em;
+  }
+}
+
+.person-desc {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 18px 12px;
+  font-size: 1.125em;
+  color: #ffffff;
+  background: #929292;
+  @include multiTranform(translateX(0));
+  @include multiTransition(all .2s);
+}
+
+@mixin line() {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  @include multiTransition(all .3s);
+  background: #A5A5A5;
+}
+
+.line-top {
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 0;
+  @include line;
+}
+
+.line-bottom {
+  top: auto;
+  left: auto;
+  bottom: 0;
+  right: 0;
+  height: 4px;
+  width: 0;
+  @include line;
+}
+
+.line-right {
+  top: 0;
+  right: 0;
+  left: auto;
+  bottom: auto;
+  width: 4px;
+  height: 0;
+  @include line;
+}
+
+.line-left {
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 4px;
+  @include line;
+}
+
+@mixin hoverAnimate() {
+  &:nth-child(4n + 1) {
+    &:hover {
+      .person-desc {
+        left: 100%;
+        transform: translateX(30px);
+      }
+    }
+  }
+  @media #{$ipadPro} {
+    &:nth-child(4n + 1) {
+      &:hover {
+        .person-desc {
+          left: -100%;
+          transform: translateX(-30px);
+        }
+      }
+    }
+    &:nth-child(3n + 1) {
+      &:hover {
+        .person-desc {
+          left: 100%;
+          transform: translateX(30px);
+        }
+      }
+    }
+  }
+  @media #{$ipad} {
+    &:nth-child(4n + 1), &:nth-child(3n + 1) {
+      &:hover {
+        .person-desc {
+          left: -100%;
+          transform: translateX(-30px);
+        }
+      }
+    }
+    &:nth-child(2n + 1) {
+      &:hover {
+        .person-desc {
+          left: 100%;
+          transform: translateX(30px);
+        }
+      }
+    }
+  }
+  @media #{$nexus} {
+    &:nth-child(n + 1), &:nth-child(2n + 1), &:nth-child(3n + 1), &:nth-child(4n + 1) {
+      &:hover {
+        .person-desc {
+          left: 0;
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+  &:hover {
+    .person-desc {
+      z-index: 1;
+      left: -100%;
+      transform: translateX(-30px);
+    }
+  }
+}
+
+.person-item {
+  @include hoverAnimate();
+  &:hover {
+    .line-top {
+      width: 100%;
+    }
+    .line-bottom {
+      width: 100%;
+    }
+    .line-right {
+      height: 100%;
+    }
+    .line-left {
+      height: 100%;
+    }
+  }
+}
+
+@media #{$fullHD} {
+  .person-detail {
+    width: 100%;
+    padding: 0 15%;
+  }
+}
+
+@media #{$laptop} {
+  .person-detail {
+    padding: 0 25px 0 55px;
+  }
+}
+
+@media #{$ipadPro} {
+
+}
+
+@media #{$ipad} {
+  .person-detail {
+    margin-top: 100px;
+  }
+}
+
+@media #{$nexus} {
+
+}
+
+@media #{$ip6} {
+
+}
+
+@media #{$galaxy} {
+
+}
+
+@media #{$ip5} {
+
 }

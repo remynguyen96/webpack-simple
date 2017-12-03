@@ -1,0 +1,12 @@
+div.footer
+    -
+        var social = [
+            {name: 'facebook', icon: 'fa-facebook-official'},
+            {name: 'instagram', icon: 'fa-instagram'},
+            {name: 'google+', icon: 'fa-google-plus'},
+            {name: 'twitter', icon: 'fa-twitter'},
+        ]
+    div.social-icon
+        each item in social
+            a(href=`${item.name}` class='social-icon-link'): i(class=`fa ${item.icon}` aria-hidden="true")
+    h4.copyright Copyright by #[a(href="/") Dark Horse] 2017. All rights reserved.

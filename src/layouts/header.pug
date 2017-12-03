@@ -1,2 +1,34 @@
+-
+    var listMenu = [
+        {name: 'Home', link: 'http://localhost:8080/', children: []},
+        {name: 'About us', link: 'http://localhost:8080/about-us.html', children: [
+                {name: 'Darkhorse', link: 'http://localhost:8080/darkhorse.html'},
+                {name: 'Architecture', link: 'http://localhost:8080/architecture.html'},
+                {name: 'Interior Design', link: 'http://localhost:8080/interior-design.html'},
+            ]
+        },
+        {name: 'Portfolio', link:'http://localhost:8080/portfolio.html', children: []},
+        {name: 'Contact us', link:'http://localhost:8080/contact.html', children: []}
+    ];
+div.info-header
+    div.logo-site
+        a(href='/'): img(src='./images/logo-darkhorse.png' alt='logo' class='logo-images')
+    nav.list-menu
+        ul#menu-primary.menu-header
+            each menu1 in listMenu
+                li.items
+                    a(href=`${menu1.link}` class='item-link')= menu1.name
+                    if menu1.children.length > 0
+                        ul(class="sub-item")
+                            each menu2 in menu1.children
+                                li.items
+                                    a(href=`${menu2.link}` class='item-link')= menu2.name
+        div.translate
+            a(href='english' class='language') English
+            a(href='english' class='language') Vietnamese
+    .menu-icon
+        span
+        span
+        span
 
 

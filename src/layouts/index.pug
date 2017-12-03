@@ -1,20 +1,15 @@
-block configSite
-    -
-        var config = {
-            title: 'Homepage'
-        }
 doctype html
-html
+html(lang="en")
     head
-        meta(charset="UTF-8")
         meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
-        meta(http-equiv="X-UA-Compatible" content="ie=edge")
-        title=config.title
-        include header
-    body.body
-        block main
-            h1(style={'text-align': 'center', 'text-transform': 'uppercase', color: '#58FF73'}) welcome to webiste !!!
-        block footer
-            .footer
-                span Always remember that the future comes one day at a time.
-        include scripts
+        meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+        block titleSite
+    body
+        #page-wrapper
+            header#site-header
+                include header
+            .main
+              block mainPage
+
+            footer#site-footer
+                include footer

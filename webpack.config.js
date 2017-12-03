@@ -13,11 +13,10 @@ module.exports = {
         app: './src/js/app.js',
         homepage: './src/js/homepage.js',
         architecture: './src/js/architecture.js',
-        career: './src/js/career.js',
         contact: './src/js/contact.js',
         darkhorse: './src/js/darkhorse.js',
-        info: './src/js/info.js',
         portfolio: './src/js/portfolio.js',
+        'portfolio-single': './src/js/portfolio-single.js',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -44,7 +43,7 @@ module.exports = {
             },
             {
                 test: /\.pug$/,
-                use: ['pug-loader']
+                use: 'pug-loader'
             },
             {
                 test: /\.(jpg|jpeg|png|gif|svg|ico)$/,
@@ -93,9 +92,21 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             inject: true,
-            chunks: ['career', 'app'],
-            filename: 'career.html',
-            template: './src/career.pug',
+            chunks: ['darkhorse', 'app'],
+            filename: 'darkhorse.html',
+            template: './src/darkhorse.pug',
+        }),
+        new HtmlWebpackPlugin({
+            inject: true,
+            chunks: ['portfolio', 'app'],
+            filename: 'portfolio.html',
+            template: './src/portfolio.pug',
+        }),
+        new HtmlWebpackPlugin({
+            inject: true,
+            chunks: ['portfolio-single', 'app'],
+            filename: 'portfolio-single.html',
+            template: './src/portfolio-single.pug',
         }),
         new HtmlWebpackPlugin({
             inject: true,
@@ -105,21 +116,22 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             inject: true,
-            chunks: ['darkhorse', 'app'],
-            filename: 'darkhorse.html',
-            template: './src/darkhorse.pug',
+            chunks: ['contact', 'app'],
+            filename: 'contact-info.html',
+            template: './src/contact-info.pug',
         }),
         new HtmlWebpackPlugin({
             inject: true,
-            chunks: ['info', 'app'],
-            filename: 'info.html',
-            template: './src/info.pug',
+            chunks: ['contact', 'app'],
+            filename: 'contact-detail.html',
+            template: './src/contact-detail.pug',
         }),
         new HtmlWebpackPlugin({
             inject: true,
-            chunks: ['portfolio', 'app'],
-            filename: 'portfolio.html',
-            template: './src/portfolio.pug',
+            chunks: ['contact', 'app'],
+            filename: 'contact-career.html',
+            template: './src/contact-career.pug',
         }),
+
     ]
 };

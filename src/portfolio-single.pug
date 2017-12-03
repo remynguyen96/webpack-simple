@@ -1,0 +1,35 @@
+extends layouts/index
+block mainPage
+    .portfo-site
+        .portfo-bg
+        .portfo-content
+            .portfo-desc
+                .portfo-info
+                    h3.portfo-info-til IT Park Office Building
+                    span.portfo-info-part Him Lam corporation Ha Noi, Vietnam
+                    span.portfo-info-part No. of storey: 17 storeys
+                .portfo-txt Darkhorse has been commissioned to prepared a concept the signature Commercial O ce Tower in the Him Lam IT Park development. #[br] The proposed building is positioned in the key corner site of the multi building development and acts the gateway building. The proposed building will be seen from many directions and as such sits “in the round”. Our concept key idea is to create a vertically proportioned facade design that turns a building form that is as wide as it is high into a elegantly proportioned building form which is articulated into a series of vertical glazed towers reaching for the sky.#[br] The facade creates a modular system of expressed and recessed mullions that simply connect the standard #[br] glazing units into this elegant pattern, thus creating the vertical form. #[br] Feature treatments at the building entrance, building awnings and colonnades, podium parking level and building restaurant space give detail and interest to the overall composition.
+                img.portfo-image(src='images/image6.png' alt='image6')
+
+                .portfo-intro
+                    div.portfo-intro-img
+                        img.intro-img(src='images/image13.png' alt='image13')
+                    p.portfo-intro-desc “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat rutrum nunc nec tincidunt. Fusce vitae viverra metus. Phasellus est dui. Mauris semper, ipsum sed sagittis placerat.”
+
+                img.portfo-image(src='images/image12.png' alt='image12')
+
+            .portfo-sidebar
+                h3.sidebar-titl Related Links
+                - for (var i = 0; i <= 4; i++)
+                    section.sidebar-post
+                        .sidebar-info
+                            h4.sidebar-info-til Project
+                            p.sidebar-info-desc Lorem ipsum dolor sit amet consectetur
+                        img.sidebar-img(src='images/image4.png' alt='image4')
+                        span.sidebar-cate C
+
+    div.icon-footer
+        img(src='images/Icon.png' alt='icon')
+
+
+
