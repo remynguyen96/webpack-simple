@@ -2,44 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75a0af30-3ac2-4ff7-8c94-e82bab00ec6c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/contact-detail.pug" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/contact-info.pug" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/css/portfolio-single.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/layouts/footer.pug" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/portfolio-single.pug" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/dist/architecture.html" afterPath="$PROJECT_DIR$/dist/architecture.html" />
-      <change beforePath="$PROJECT_DIR$/dist/contact-career.html" afterPath="$PROJECT_DIR$/dist/contact-career.html" />
-      <change beforePath="$PROJECT_DIR$/dist/contact-detail.html" afterPath="$PROJECT_DIR$/dist/contact-detail.html" />
-      <change beforePath="$PROJECT_DIR$/dist/contact-info.html" afterPath="$PROJECT_DIR$/dist/contact-info.html" />
-      <change beforePath="$PROJECT_DIR$/dist/contact.html" afterPath="$PROJECT_DIR$/dist/contact.html" />
-      <change beforePath="$PROJECT_DIR$/dist/darkhorse.html" afterPath="$PROJECT_DIR$/dist/darkhorse.html" />
-      <change beforePath="$PROJECT_DIR$/dist/portfolio-single.html" afterPath="$PROJECT_DIR$/dist/portfolio-single.html" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/src/architecture.pug" afterPath="$PROJECT_DIR$/src/architecture.pug" />
-      <change beforePath="$PROJECT_DIR$/src/career.pug" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/contact.pug" afterPath="$PROJECT_DIR$/src/contact.pug" />
+      <change beforePath="$PROJECT_DIR$/src/contact-career.pug" afterPath="$PROJECT_DIR$/src/contact-career.pug" />
       <change beforePath="$PROJECT_DIR$/src/css/architecture.scss" afterPath="$PROJECT_DIR$/src/css/architecture.scss" />
-      <change beforePath="$PROJECT_DIR$/src/css/career.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/css/common/_variable.scss" afterPath="$PROJECT_DIR$/src/css/common/_variable.scss" />
       <change beforePath="$PROJECT_DIR$/src/css/contact.scss" afterPath="$PROJECT_DIR$/src/css/contact.scss" />
-      <change beforePath="$PROJECT_DIR$/src/css/darkhorse.scss" afterPath="$PROJECT_DIR$/src/css/darkhorse.scss" />
       <change beforePath="$PROJECT_DIR$/src/css/homepage.scss" afterPath="$PROJECT_DIR$/src/css/homepage.scss" />
-      <change beforePath="$PROJECT_DIR$/src/css/info.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/css/portfolio.scss" afterPath="$PROJECT_DIR$/src/css/portfolio.scss" />
-      <change beforePath="$PROJECT_DIR$/src/css/style.scss" afterPath="$PROJECT_DIR$/src/css/style.scss" />
-      <change beforePath="$PROJECT_DIR$/src/darkhorse.pug" afterPath="$PROJECT_DIR$/src/darkhorse.pug" />
       <change beforePath="$PROJECT_DIR$/src/homepage.pug" afterPath="$PROJECT_DIR$/src/homepage.pug" />
-      <change beforePath="$PROJECT_DIR$/src/info.pug" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/js/app.js" afterPath="$PROJECT_DIR$/src/js/app.js" />
-      <change beforePath="$PROJECT_DIR$/src/js/career.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/js/info.js" afterPath="$PROJECT_DIR$/src/js/portfolio-single.js" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/header.pug" afterPath="$PROJECT_DIR$/src/layouts/header.pug" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/index.pug" afterPath="$PROJECT_DIR$/src/layouts/index.pug" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/scripts.pug" afterPath="$PROJECT_DIR$/src/contact-career.pug" />
-      <change beforePath="$PROJECT_DIR$/src/portfolio.pug" afterPath="$PROJECT_DIR$/src/portfolio.pug" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
+      <change beforePath="$PROJECT_DIR$/src/images/image1.png" afterPath="$PROJECT_DIR$/src/images/image1.png" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -58,54 +27,45 @@
     <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="portfolio-single.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dist/portfolio-single.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="109" column="49" lean-forward="true" selection-start-line="109" selection-start-column="49" selection-end-line="109" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>contact-single</find>
-      <find>single</find>
-      <find>-info</find>
-      <find>career-info</find>
-      <find>input</find>
-      <find>inputForm</find>
-      <find>-til</find>
-      <find>inputCareer</find>
-      <find>contact-career</find>
-      <find>.career-form</find>
-      <find>career-map</find>
-      <find>@i</find>
-      <find>$ip5</find>
-      <find>$galaxy</find>
-      <find>$ip6</find>
-      <find>$nexus</find>
-      <find>career</find>
-      <find>sidebar-info</find>
-      <find>sidebar-info-desc</find>
-      <find>port-content</find>
-      <find>portfo-info</find>
-      <find>port-info-part</find>
-      <find>url</find>
-      <find>portfo-content</find>
-      <find>desc</find>
+      <find>home-lf</find>
+      <find>-lt</find>
+      <find>home-lf-fr</find>
+      <find>lf-news</find>
       <find>post</find>
-      <find>portfo-intro</find>
-      <find>portfo-image</find>
-      <find>intro-img</find>
-      <find>78</find>
+      <find>.home-rg</find>
+      <find>lf-sc</find>
+      <find>@include multiFlex;</find>
+      <find>lf</find>
+      <find>.lf-project, .sc-project</find>
+      <find>.lf-news, .sc-news</find>
+      <find>home-lf-lt</find>
+      <find>lf-lt</find>
+      <find>home-</find>
+      <find>all-lf-project</find>
+      <find>lf-project</find>
+      <find>all-</find>
+      <find>.lf-project</find>
+      <find>width: 270px;</find>
+      <find>.home-lf-fr</find>
+      <find>-lf-fr</find>
+      <find>lf-fr</find>
+      <find>home-rg</find>
+      <find>78px</find>
+      <find>.lf-project-desc, .sc-project-desc, .lt-project-desc</find>
+      <find>flex-basis: 80%;</find>
+      <find>.lf-news-desc, .sc-news-desc</find>
+      <find>hover</find>
+      <find>.home-desc</find>
+      <find>.lf-news-img, .sc-news-img</find>
     </findStrings>
     <replaceStrings>
       <replace>let</replace>
+      <replace>multiFlex</replace>
+      <replace>display: flex;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -114,15 +74,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dist/js/app.bundle.js" />
-        <option value="$PROJECT_DIR$/dist/js/architecture.bundle.js" />
-        <option value="$PROJECT_DIR$/src/js/contact.js" />
-        <option value="$PROJECT_DIR$/src/js/darkhorse.js" />
-        <option value="$PROJECT_DIR$/src/js/homepage.js" />
-        <option value="$PROJECT_DIR$/src/js/info.js" />
-        <option value="$PROJECT_DIR$/src/js/portfolio.js" />
-        <option value="$PROJECT_DIR$/dist/info.html" />
-        <option value="$PROJECT_DIR$/dist/career.html" />
         <option value="$PROJECT_DIR$/src/js/architecture.js" />
         <option value="$PROJECT_DIR$/src/js/career.js" />
         <option value="$PROJECT_DIR$/src/css/career.scss" />
@@ -130,15 +81,12 @@
         <option value="$PROJECT_DIR$/src/css/info.scss" />
         <option value="$PROJECT_DIR$/yarn.lock" />
         <option value="$USER_HOME$/Downloads/HOME.html" />
-        <option value="$PROJECT_DIR$/src/css/homepage.scss" />
         <option value="$PROJECT_DIR$/src/portfolio.pug" />
         <option value="$PROJECT_DIR$/src/info.pug" />
         <option value="$PROJECT_DIR$/src/layouts/index.pug" />
-        <option value="$PROJECT_DIR$/src/homepage.pug" />
         <option value="$PROJECT_DIR$/src/darkhorse.pug" />
         <option value="$PROJECT_DIR$/src/css/common/_variable.scss" />
         <option value="$PROJECT_DIR$/src/architecture.pug" />
-        <option value="$PROJECT_DIR$/src/css/architecture.scss" />
         <option value="$PROJECT_DIR$/src/layouts/info-single.pug" />
         <option value="$PROJECT_DIR$/src/layouts/header.pug" />
         <option value="$PROJECT_DIR$/src/layouts/footer.pug" />
@@ -149,15 +97,11 @@
         <option value="$PROJECT_DIR$/src/js/app.js" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/src/layouts/info.pug" />
-        <option value="$PROJECT_DIR$/src/contact-career.pug" />
         <option value="$PROJECT_DIR$/src/contact.pug" />
         <option value="$PROJECT_DIR$/src/contact-detail.pug" />
-        <option value="$PROJECT_DIR$/src/contact-info.pug" />
-        <option value="$PROJECT_DIR$/src/css/contact.scss" />
         <option value="$PROJECT_DIR$/src/portfolio-single.pug" />
         <option value="$PROJECT_DIR$/src/css/portfolio-single.scss" />
         <option value="$PROJECT_DIR$/dist/portfolio.html" />
-        <option value="$PROJECT_DIR$/dist/index.html" />
         <option value="$PROJECT_DIR$/dist/architecture.html" />
         <option value="$PROJECT_DIR$/dist/contact.html" />
         <option value="$PROJECT_DIR$/dist/contact-career.html" />
@@ -165,6 +109,22 @@
         <option value="$PROJECT_DIR$/dist/contact-info.html" />
         <option value="$PROJECT_DIR$/dist/darkhorse.html" />
         <option value="$PROJECT_DIR$/dist/portfolio-single.html" />
+        <option value="$PROJECT_DIR$/dist/js/app.bundle.js" />
+        <option value="$PROJECT_DIR$/dist/css/app.bundle.css" />
+        <option value="$PROJECT_DIR$/dist/css/architecture.bundle.css" />
+        <option value="$PROJECT_DIR$/dist/css/contact.bundle.css" />
+        <option value="$PROJECT_DIR$/dist/css/darkhorse.bundle.css" />
+        <option value="$PROJECT_DIR$/dist/css/portfolio-single.bundle.css" />
+        <option value="$PROJECT_DIR$/src/contact-info.pug" />
+        <option value="$PROJECT_DIR$/src/contact-career.pug" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-2/style.css" />
+        <option value="$USER_HOME$/Downloads/feedback.txt" />
+        <option value="$PROJECT_DIR$/src/css/contact.scss" />
+        <option value="$PROJECT_DIR$/src/css/architecture.scss" />
+        <option value="$PROJECT_DIR$/src/homepage.pug" />
+        <option value="$PROJECT_DIR$/src/css/homepage.scss" />
+        <option value="$PROJECT_DIR$/dist/index.html" />
+        <option value="$PROJECT_DIR$/dist/css/homepage.bundle.css" />
       </list>
     </option>
   </component>
@@ -235,6 +195,23 @@
               <item name="webpack-simple" type="462c0819:PsiDirectoryNode" />
               <item name="dist" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="webpack-simple" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webpack-simple" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webpack-simple" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webpack-simple" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webpack-simple" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webpack-simple" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -299,28 +276,30 @@
       <workItem from="1509913619466" duration="7999000" />
       <workItem from="1512176175222" duration="9226000" />
       <workItem from="1512223196537" duration="16123000" />
-      <workItem from="1512251698480" duration="31000000" />
+      <workItem from="1512251698480" duration="32787000" />
+      <workItem from="1512310953036" duration="2027000" />
+      <workItem from="1512392323971" duration="17385000" />
+      <workItem from="1512430535494" duration="1900000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178259000" />
+    <option name="totallyTimeSpent" value="201358000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25427508" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25427508" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3273906" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3273906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32686085" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -329,25 +308,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959481" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25427508" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959481" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -362,101 +322,12 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Downloads/HOME.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="42" column="57" lean-forward="true" selection-start-line="42" selection-start-column="57" selection-end-line="42" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/logo-darkhorse.png.tmp$$" />
-    <entry file="file://$PROJECT_DIR$/../webpack-layout/Carmen/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="206" column="39" lean-forward="true" selection-start-line="206" selection-start-column="39" selection-end-line="206" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../webpack-layout/grap/src/scss/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="61" lean-forward="true" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/career.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/person1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/career.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="36" lean-forward="true" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/darkhorse.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="29" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/homepage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="33" lean-forward="true" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/portfolio.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="35" lean-forward="true" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/info-single.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="0" column="490" lean-forward="true" selection-start-line="0" selection-start-column="490" selection-end-line="0" selection-end-column="490" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/career.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="248" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layouts/info-single.pug" />
+    <entry file="file://$PROJECT_DIR$/src/career.pug" />
     <entry file="file://$PROJECT_DIR$/src/js/portfolio-single.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="40" lean-forward="true" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/architecture.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="66" column="36" lean-forward="true" selection-start-line="66" selection-start-column="36" selection-end-line="66" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -464,7 +335,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="35" lean-forward="true" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -472,7 +342,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="66" column="53" lean-forward="true" selection-start-line="66" selection-start-column="53" selection-end-line="66" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -480,47 +349,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="344">
           <caret line="120" column="29" lean-forward="true" selection-start-line="120" selection-start-column="29" selection-end-line="120" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/career.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="38" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/contact2.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layouts/career.pug" />
+    <entry file="file://$PROJECT_DIR$/src/contact2.pug" />
     <entry file="file://$PROJECT_DIR$/src/layouts/index.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="8" column="39" lean-forward="true" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/info.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layouts/info.pug" />
     <entry file="file://$PROJECT_DIR$/src/layouts/header.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="14" column="52" lean-forward="false" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -528,7 +373,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="7" column="47" lean-forward="true" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -536,31 +380,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/portfolio.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/homepage.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3848">
-          <caret line="148" column="22" lean-forward="true" selection-start-line="148" selection-start-column="22" selection-end-line="148" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -568,190 +387,180 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="7" column="56" lean-forward="true" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/contact.scss">
+    <entry file="file://$PROJECT_DIR$/dist/architecture.html" />
+    <entry file="file://$PROJECT_DIR$/dist/contact.html" />
+    <entry file="file://$PROJECT_DIR$/dist/contact-career.html" />
+    <entry file="file://$PROJECT_DIR$/dist/contact-detail.html" />
+    <entry file="file://$PROJECT_DIR$/dist/contact-info.html" />
+    <entry file="file://$PROJECT_DIR$/dist/darkhorse.html" />
+    <entry file="file://$PROJECT_DIR$/dist/portfolio-single.html" />
+    <entry file="file://$PROJECT_DIR$/dist/js/architecture.bundle.js" />
+    <entry file="file://$PROJECT_DIR$/dist/css/portfolio.bundle.css" />
+    <entry file="file://$PROJECT_DIR$/dist/js/app.bundle.js" />
+    <entry file="file://$PROJECT_DIR$/dist/css/app.bundle.css" />
+    <entry file="file://$PROJECT_DIR$/dist/css/architecture.bundle.css" />
+    <entry file="file://$PROJECT_DIR$/dist/css/contact.bundle.css" />
+    <entry file="file://$PROJECT_DIR$/dist/css/darkhorse.bundle.css" />
+    <entry file="file://$PROJECT_DIR$/dist/css/portfolio-single.bundle.css" />
+    <entry file="file://$PROJECT_DIR$/src/contact.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="286">
+          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/darkhorse.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-390">
+        <state relative-caret-position="26">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/darkhorse.scss">
+    <entry file="file://$PROJECT_DIR$/src/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="162" column="30" lean-forward="true" selection-start-line="162" selection-start-column="30" selection-end-line="162" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="211">
+          <caret line="134" column="59" lean-forward="true" selection-start-line="134" selection-start-column="59" selection-end-line="134" selection-end-column="59" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/portfolio-single.scss">
+    <entry file="file://$PROJECT_DIR$/src/contact-info.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="153" column="50" lean-forward="true" selection-start-line="153" selection-start-column="50" selection-end-line="153" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/homepage.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="4" column="257" lean-forward="true" selection-start-line="4" selection-start-column="257" selection-end-line="4" selection-end-column="257" />
-          <folding />
+        <state relative-caret-position="104">
+          <caret line="4" column="42" lean-forward="true" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/portfolio.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
-          <caret line="2" column="252" lean-forward="true" selection-start-line="2" selection-start-column="252" selection-end-line="2" selection-end-column="252" />
+          <caret line="2" column="286" lean-forward="true" selection-start-line="2" selection-start-column="286" selection-end-line="2" selection-end-column="286" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/contact-detail.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="8" column="55" lean-forward="true" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/architecture.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="16" column="138" lean-forward="false" selection-start-line="16" selection-start-column="138" selection-end-line="16" selection-end-column="138" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/portfolio.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/style.css" />
+    <entry file="file://$USER_HOME$/Downloads/feedback.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="74" lean-forward="true" selection-start-line="1" selection-start-column="74" selection-end-line="1" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/darkhorse.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="36" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/contact.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/architecture.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/portfolio-single.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="31" column="35" lean-forward="false" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+        <state relative-caret-position="364">
+          <caret line="29" column="54" lean-forward="true" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/contact-info.pug">
+    <entry file="file://$PROJECT_DIR$/src/css/portfolio-single.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="62" lean-forward="true" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
+        <state relative-caret-position="594">
+          <caret line="97" column="41" lean-forward="true" selection-start-line="97" selection-start-column="41" selection-end-line="97" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/contact-career.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/contact-detail.pug">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
-          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-          <folding />
+          <caret line="6" column="67" lean-forward="false" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/contact.pug">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/homepage.bundle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
-          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/architecture.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="16" column="138" lean-forward="false" selection-start-line="16" selection-start-column="138" selection-end-line="16" selection-end-column="138" />
-          <folding />
+          <caret line="0" column="2038" lean-forward="false" selection-start-line="0" selection-start-column="2038" selection-end-line="0" selection-end-column="2038" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/portfolio.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="20" column="46" lean-forward="false" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+        <state relative-caret-position="286">
+          <caret line="0" column="1203" lean-forward="false" selection-start-line="0" selection-start-column="1203" selection-end-line="0" selection-end-column="1203" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="55" column="37" lean-forward="true" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/js/app.bundle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/js/architecture.bundle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="0" column="508" lean-forward="true" selection-start-line="0" selection-start-column="508" selection-end-line="0" selection-end-column="508" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/architecture.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="73" lean-forward="true" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
-          <caret line="58" column="24" lean-forward="true" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+          <caret line="23" column="149" lean-forward="true" selection-start-line="23" selection-start-column="149" selection-end-line="23" selection-end-column="149" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/contact-career.html">
+    <entry file="file://$PROJECT_DIR$/src/css/homepage.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+        <state relative-caret-position="360">
+          <caret line="313" column="44" lean-forward="true" selection-start-line="313" selection-start-column="44" selection-end-line="313" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/contact-detail.html">
+    <entry file="file://$PROJECT_DIR$/src/homepage.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="260">
+          <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="45" />
+          <folding>
+            <marker date="1512431798421" expanded="true" signature="62:1752" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/contact-info.html">
+    <entry file="file://$PROJECT_DIR$/dist/css/homepage.bundle.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/darkhorse.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/portfolio-single.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="109" column="49" lean-forward="true" selection-start-line="109" selection-start-column="49" selection-end-line="109" selection-end-column="49" />
+        <state relative-caret-position="156">
+          <caret line="77" column="30" lean-forward="true" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="30" />
           <folding />
         </state>
       </provider>

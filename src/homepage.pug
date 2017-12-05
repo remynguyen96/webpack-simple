@@ -1,5 +1,32 @@
 extends layouts/index
 block titleSite
-    title Architecture
+    title Homepage
 block mainPage
-    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam architecto at consequatur expedita magnam nihil, numquam optio perferendis quaerat quisquam quo voluptatem? Cupiditate dolore eius illo, neque repudiandae sunt.
+    .home-site
+        .home-bg
+        .home-desc
+            .home-lf
+                mixin box(cls, til, desc, img, cate)
+                    div(class=cls)
+                        a(class=`${cls}-hover` href='/')
+                            h3(class=`${cls}-hover-til`)= til
+                        div(class=`${cls}-info`)
+                            h4(class=`${cls}-til`)= til
+                            p(class=`${cls}-desc`)= desc
+                        a(class=`${cls}-alink` href='/'): img(class=`${cls}-img` src=`images/${img}` alt=img)
+                        if cate
+                            span(class=`${cls}-cate`)=cate
+                .home-lf-fr
+                    .all-lf-news
+                       +box('lf-news','News','Carter Street Urban Activation Precinct, Urban Design and Planning Review','image6.png')
+                       +box('lf-news','News','Carter Street Urban Activation Precinct, Urban Design and Planning Review','image6.png')
+                    +box('lf-project','Project','IT park office buildind','image6.png', 'C')
+                .home-lf-sc
+                    +box('sc-project','Project','IT park office buildind','image6.png', 'R')
+                    +box('sc-news','Project','IT park office buildind','image6.png')
+                .home-lf-lt
+                    +box('lt-project','Project','IT park office buildind','image6.png', 'R')
+            .home-rg
+                +box('home-rg-box','News','Carter Street Urban Activation Precinct, Urban Design and Planning Review', 'image5.png')
+                +box('home-rg-box','News','Carter Street Urban Activation Precinct, Urban Design and Planning Review', 'image5.png')
+
