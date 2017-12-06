@@ -1,1 +1,21 @@
 @import "variable";
+
+body {
+  height: 200px;
+  background: navy url(../images/deepsea.jpg) top center no-repeat fixed;
+  background-size: cover;
+}
+
+#bubble1 {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: -1;
+  background: url(../images/bubbles1.png) 5% 50% no-repeat;
+}
+
+#bubble2 {
+  background: url(../images/bubbles3.png) 95% 50% no-repeat;
+}

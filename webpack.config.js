@@ -5,7 +5,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
 
 const extractPlugin = new ExtractTextPlugin({
-   filename: 'app.bundle.css'
+   filename: '[name].bundle.css'
 });
 
 module.exports = {
@@ -14,8 +14,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'app.bundle.js',
-        // publicPath: '/dist'
+        filename: '[name].bundle.js',
     },
     module: {
         rules: [
@@ -25,7 +24,7 @@ module.exports = {
                     {
                         loader: 'babel-loader',
                         options: {
-                            presets: ['es2015']
+                            presets: ["env", "stage-3"],
                         }
                     }
                 ]
@@ -35,6 +34,10 @@ module.exports = {
                 use: extractPlugin.extract({
                     use: ['css-loader', 'sass-loader']
                 })
+            },
+            {
+                test: /\.pug$/,
+                use: 'pug-loader'
             },
             {
                 test: /\.html$/,
@@ -70,20 +73,31 @@ module.exports = {
     },
     plugins: [
         extractPlugin,
+        new CleanWebpackPlugin(['dist'],{
+            watch: true,
+        }),
         new HtmlWebpackPlugin({
           filename: 'index.html',
           hash: false,
           template: 'src/index.html',
-          // chunks:[],
         }),
         new HtmlWebpackPlugin({
           filename: 'page.html',
           template: 'src/page.html',
         }),
-        new webpack.ProvidePlugin({
-          $: 'jquery',
-          jQuery: 'jquery'
+        new HtmlWebpackPlugin({
+            filename: 'animate1.html',
+            template: 'src/animate1.html',
         }),
-        new CleanWebpackPlugin(['dist'])
+        // new HtmlWebpackPlugin({
+        //     inject: true,
+        //     chunks: ['contact', 'app'],
+        //     filename: 'contact-detail.html',
+        //     template: './src/contact-detail.pug',
+        // }),
+        // new webpack.ProvidePlugin({
+        //   $: 'jquery',
+        //   jQuery: 'jquery'
+        // }),
     ]
 };
