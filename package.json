@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack-dev-server",
-    "build:prod": "webpack -p"
+    "dev": "webpack-dev-server",
+    "build": "webpack -p"
   },
   "keywords": [],
   "author": "Maximilian Schwarzmüller",

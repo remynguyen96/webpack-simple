@@ -68,13 +68,13 @@ module.exports = {
     plugins: [
         extractPlugin,
         new HtmlWebpackPlugin({
-          title: 'Webpack Simple',
-          hash: true,
-          template: 'src/index.html',
+            title: 'Webpack Simple',
+            hash: true,
+            template: 'src/index.html',
         }),
-        new webpack.ProvidePlugin({
-          $: 'jquery',
-          jQuery: 'jquery'
+        new HtmlWebpackPlugin({
+            title: 'Test KMS',
+            template: 'src/kms.html',
         }),
         new CleanWebpackPlugin(['dist'])
     ]

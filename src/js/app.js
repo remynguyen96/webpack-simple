@@ -1,20 +1,18 @@
 import '../css/app.scss';
-import 'materialize-css/dist/js/materialize';
-import { RandomGenerator } from './random-generator';
-import './functions.js';
-
-const outputParagraph = document.querySelector('#outputParagraph');
-
-const outputRandomInt = () => {
-    outputParagraph.textContent = RandomGenerator.randomInteger();
-};
-
-const outputRandomRange = () => {
-    outputParagraph.textContent = RandomGenerator.randomRange(1, 500);
-};
-
-const buttonRndInt = document.querySelector('#randomInt');
-const buttonRndRange = document.querySelector('#randomRange');
-
-buttonRndInt.addEventListener('click', outputRandomInt);
-buttonRndRange.addEventListener('click', outputRandomRange);
+(function(){
+    window.onload = window.onresize = function() {
+        if (window.innerWidth < 1024) {
+            const menuMobile = document.querySelector('.menu-mobile');
+            const menu = document.querySelector('.menu');
+            menuMobile.onclick = function() {
+                if (menu.classList.contains('open')) {
+                    menu.classList.remove('open');
+                    menuMobile.classList.remove('open');
+                } else {
+                    menu.classList.add('open');
+                    menuMobile.classList.add('open');
+                }
+            }
+        }
+    }
+})();
