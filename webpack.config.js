@@ -72,10 +72,6 @@ module.exports = {
             hash: true,
             template: 'src/index.html',
         }),
-        new HtmlWebpackPlugin({
-            title: 'Test KMS',
-            template: 'src/kms.html',
-        }),
         new CleanWebpackPlugin(['dist'])
     ]
 };
