@@ -59,6 +59,7 @@ html {
   width: 250px;
   height: 64px;
   background: gray;
+  transition: background .3s ease-in-out;
   color: #ffffff;
   display: flex;
   display: -webkit-flex;
