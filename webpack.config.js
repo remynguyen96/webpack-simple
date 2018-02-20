@@ -8,11 +8,10 @@ const extractPlugin = new ExtractTextPlugin({
 });
 
 module.exports = {
-    entry: './src/js/app.js',
+    entry: ['babel-polyfill', './src/js/app.js'],
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'app.bundle.js',
-        // publicPath: '/dist'
     },
     module: {
         rules: [
@@ -22,7 +21,7 @@ module.exports = {
                     {
                         loader: 'babel-loader',
                         options: {
-                            presets: ['es2015']
+                            presets: ["stage-2", "flow", "es2015"]
                         }
                     }
                 ]
@@ -44,8 +43,8 @@ module.exports = {
                         loader: 'file-loader',
                         options: {
                             name: '[name].[ext]',
-                            outputPath: 'img/',
-                            publicPath: 'img/'
+                            outputPath: 'images/',
+                            publicPath: 'images/'
                         }
                     }
                 ]
@@ -68,7 +67,7 @@ module.exports = {
     plugins: [
         extractPlugin,
         new HtmlWebpackPlugin({
-            title: 'Webpack Simple',
+            title: 'RXJS Simple',
             hash: true,
             template: 'src/index.html',
         }),
