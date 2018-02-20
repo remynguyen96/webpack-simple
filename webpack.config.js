@@ -8,7 +8,7 @@ const extractPlugin = new ExtractTextPlugin({
 });
 
 module.exports = {
-    entry: './src/js/app.js',
+    entry: ['babel-polyfill', './src/js/app.js'],
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'app.bundle.js',
@@ -22,7 +22,7 @@ module.exports = {
                     {
                         loader: 'babel-loader',
                         options: {
-                            presets: ['es2015']
+                            presets: ["stage-3", "flow", "es2015"]
                         }
                     }
                 ]
@@ -68,7 +68,7 @@ module.exports = {
     plugins: [
         extractPlugin,
         new HtmlWebpackPlugin({
-            title: 'Webpack Simple',
+            title: 'RXJS Simple',
             hash: true,
             template: 'src/index.html',
         }),
