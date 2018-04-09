@@ -1,0 +1,108 @@
+#componentAuthor {
+  background-color: #0F1014;
+}
+.author {
+  background: url(../images/bg-author.jpg) center center no-repeat;
+  background-size: cover;
+  &-barrier {
+    background-color: #0F1014;
+    height: 120px;
+    transform: skewY(-3deg);
+    transform-origin: top left;
+  }
+  &-title {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.4rem;
+    text-align: center;
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #ffffff;
+      width: 9rem;
+      height: 0.2rem;
+      margin-top: 0.5rem;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    padding-bottom: 5rem;
+    color: $yellow;
+  }
+  &-info {
+    padding: 2rem 18%;
+  }
+  &-name {
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 3rem;
+    color: $yellow;
+  }
+  &-desc {
+    font-weight: 600;
+    line-height: 2.8rem;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #cfcfcf;
+  }
+  &-slide {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &-player {
+    margin: 4rem 2rem;
+    border-radius: .5rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .author {
+    &-name {
+      font-size: 1.8rem;
+      line-height: 3.2rem;
+    }
+    &-desc {
+      font-size: 1.6rem;
+    }
+    &-player {
+      width: 650px;
+      height: 500px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .author {
+    &-player {
+      max-width: 100%;
+      width: 500px;
+      height: 400px;
+    }
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .author {
+    &-player {
+      width: 400px;
+      height: 350px;
+      margin-left: 6px;
+    }
+    &-info {
+      padding: 2rem 2%;
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .author {
+    &-player {
+      margin-left: 0;
+    }
+  }
+}

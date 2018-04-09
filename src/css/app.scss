@@ -1,19 +1,8 @@
 @import '~normalize.css';
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(1,39,63,0.5);
-  border-radius: 10px;
-}
+$white: #ffffff;
+$yellow: #d8b063;
+$yellowLight: #ffc34f;
 
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 0px rgba(255,222,222,1);
-  background:#767777;
-  border:1px solid #ccc;
-}
 *,
 *:before,
 *:after {
@@ -22,95 +11,57 @@
   -webkit-box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  position: relative;
 }
-html{
-  width: 100%;
+
+html,
+body {
   height: 100%;
-  margin: 0;
-  padding: 0;
+  width: 100%;
+  font-size: 10px;
+}
+
+body {
   font-size: 16px;
-  background: linear-gradient(to bottom, #dbe6ed, #cfdde5);
+  font-family: 'Open Sans', sans-serif;
 }
 
-:root {
-  --my-color: #5EA4FF;
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
 }
 
-.container {
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-}
-.btn {
-  color: #ffffff;
-  background-color: #56FF79;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-  padding: 8px 25px;
-}
-.circle {
-  --bg: #3AFFB7;
-  background-color: var(--bg);
-  width: 10px;
-  height: 10px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  position: absolute;
-  z-index: 99;
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(1, 39, 63, 0.5);
+  border-radius: 10px;
 }
 
-.ball {
-  background-color: var(--my-color);
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  margin: 0 auto;
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 0px rgba(255, 222, 222, 1);
+  background: #767777;
+  border: 1px solid #ccc;
 }
 
-
-#card {
-  --img: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/181794/8442566463_5e3e1714cf_z.jpg');
-  height: 50vmin;
-  width: 90vmin;
-  margin: 0 auto;
-  background-color: white;
-  background: var(--img) center / cover;
-  background-size: cover;
-  box-shadow: 0 1rem 3rem rgba(black, 0.2);
-  transform-style: preserve-3d;
-
-  &:before, &:after {
-    content: '';
-    position: absolute;
-    display: block;
-    height: 2px;
-    width: 2px;
-    border-radius: 50%;
-    background: rgba(white, 0.2);
-    filter: blur(1px);
-  }
-
+.bar {
+  position: relative;
+  display: block;
   &:before {
-    transform: translateZ(1rem);
-    $shadows: ();
-    @for $i from 1 through 50 {
-      $shadows: append($shadows, random(90) * 1vmin random(50) * 1vmin 0 white, comma);
-    }
-    box-shadow: $shadows;
-  }
-
-  &:after {
-    --size: 3px;
-    height: var(--size);
-    width: var(--size);
-    transform: translateZ(2rem);
-    $shadows: ();
-    @for $i from 1 through 50 {
-      $shadows: append($shadows, random(90) * 1vmin random(50) * 1vmin 0 white, comma);
-    }
-    box-shadow: $shadows;
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: #ffc34f;
+    transition: all 300ms ease;
+    left: 0;
   }
 }
+
+@import './animation';
+@import './slider';
+@import './header';
+@import './fullVideo';
+@import './doing';
+@import './video';
+@import './author';
+@import './footer';
