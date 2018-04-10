@@ -72,15 +72,15 @@
     padding: 0 11%;
     text-align: center;
     & .tns-slide-active {
-      .yt-player {
-        width: 650px;
-        height: 500px;
-      }
       .yt-title {
         transform: translate(-2rem, 0) scale(1.1);
         line-height: 3rem;
         font-size: 1.8rem;
       }
+    }
+    .yt-player {
+      width: 650px;
+      height: 500px;
     }
   }
 };

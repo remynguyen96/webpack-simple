@@ -70,8 +70,13 @@
       font-size: 1.6rem;
     }
     &-player {
-      width: 650px;
+      width: 680px;
       height: 500px;
+      margin: 4rem 17rem;
+    }
+    &-info {
+      padding: 2rem 0;
+      margin-left: 25rem;
     }
   }
 }

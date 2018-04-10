@@ -2,6 +2,14 @@ import '../css/app.scss';
 import { YoutubeApi } from './youtube';
 import { tns } from 'tiny-slider/src/tiny-slider.module';
 import './scroll';
+import ScrollReveal from 'scrollreveal/dist/scrollreveal.min';
+const sr = new ScrollReveal({
+  viewFactor : 0.15,
+  duration   : 800,
+  distance   : "0px",
+  scale      : 0.8,
+});
+
 
 const { innerWidth } = window;
 const loadYT = new Promise((resolve) => {
@@ -12,29 +20,19 @@ const loadYT = new Promise((resolve) => {
   window.onYouTubeIframeAPIReady = () => resolve(window.YT);
 });
 
+const playerFull = document.getElementById('player-full');
 const settingsFull = {
   loadYT,
-  videoId: 'Ftm2uv7-Ybw',
-  element: 'player-full',
+  videoId: playerFull.getAttribute('data-id'),
+  element: playerFull,
   autoplay: 1,
   showinfo: 1,
 };
 
-const sliderVideo = (width) => ({
-  container: '.video-slider',
-  items: 1,
-  nav: false,
-  lazyload: true,
-  mouseDrag: true,
-  slideBy: 'page',
-  swipeAngle: false,
-  gutter: 30,
+const sliderTogether = (container, speed = 1400, width = 450) => ({
+  container,
+  speed: speed,
   fixedWidth: width,
-  speed: 1400,
-});
-
-const sliderAuthor = (width) => ({
-  container: '.author-slide',
   items: 1,
   nav: false,
   lazyload: true,
@@ -42,13 +40,12 @@ const sliderAuthor = (width) => ({
   slideBy: 'page',
   swipeAngle: false,
   gutter: 30,
+});
+const confixAutoplay = {
   autoplay: true,
   autoplayTimeout: 4000,
   autoplayText: [],
-  fixedWidth: width,
-  speed: 1800,
-});
-
+};
 
 if (innerWidth > 1024) {
   settingsFull.onPlayerReady = (event) => {
@@ -60,22 +57,17 @@ if (innerWidth > 1024) {
       event.target.playVideo();
     }
   };
-
-  tns(sliderVideo((innerWidth - (innerWidth * .2)) / 3));
-  tns(sliderAuthor((innerWidth - (innerWidth * .2)) / 3));
-
-  (async () => {
-    await import('./widthLarge');
-  })();
+  const width = (innerWidth - (innerWidth * .2)) / 3;
+  tns(sliderTogether('.video-slider', 1400, width));
+  tns(Object.assign({}, sliderTogether('.author-slide', 1800, width), confixAutoplay));
 }
-
 if (innerWidth <= 1024) {
   (async () => {
     await import('./width1024');
   })();
-
-  tns(sliderVideo((innerWidth - (innerWidth * .2)) / 1));
-  tns(sliderAuthor((innerWidth - (innerWidth * .2)) / 1));
+  const width = (innerWidth - (innerWidth * .25)) / 1;
+  tns(sliderTogether('.video-slider', 1400, width));
+  tns(Object.assign({}, sliderTogether('.author-slide', 1800, width), confixAutoplay));
 }
 if (innerWidth <= 768) {
   (async () => {
@@ -84,18 +76,19 @@ if (innerWidth <= 768) {
 }
 
 YoutubeApi(settingsFull);
-
+const playerDoing = document.getElementById('player-doing');
 YoutubeApi({
   loadYT,
-  videoId: '489HLBsev8M',
-  element: 'player-doing',
+  videoId: playerDoing.getAttribute('data-id'),
+  element: playerDoing,
 });
-
+const playerContact = document.getElementById('player-contact');
 YoutubeApi({
   loadYT,
-  videoId: '489HLBsev8M',
-  element: 'contact-video',
+  videoId: playerContact.getAttribute('data-id'),
+  element: playerContact,
 });
+
 
 const videoSlider = document.querySelectorAll('.yt-player');
 videoSlider.forEach((video) => {
@@ -105,7 +98,6 @@ videoSlider.forEach((video) => {
     element: video,
   });
 });
-
 const authorSlider = document.querySelectorAll('.author-player');
 authorSlider.forEach((author) => {
   YoutubeApi({
@@ -115,6 +107,13 @@ authorSlider.forEach((author) => {
   });
 });
 
+// sr.reveal("#test1", {
+//   origin   : "top",
+//   distance : "32px",
+//   duration : 600,
+//   scale    : 0
+// });
+// sr.reveal('.fooReveal', { container: '.fooContainer' });
 
 
 
