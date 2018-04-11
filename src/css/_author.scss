@@ -57,6 +57,20 @@
   &-player {
     margin: 4rem 2rem;
     border-radius: .5rem;
+    width: calc(100vw / 4);
+    height: calc(100vw / 4 - 100px);
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .author {
+    &-player {
+      width: calc(100vw / 4 + 25px);
+      height: calc(100vw / 4 - 50px);
+    }
+    &-info {
+      padding: 2rem 8%;
+    }
   }
 }
 

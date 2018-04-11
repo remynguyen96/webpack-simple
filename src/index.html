@@ -17,15 +17,20 @@
     <title>NetLeaders - Welcome to our community</title>
 </head>
 <body>
-<div id="modal-container">
-    <div class="modal-background">
-        <div class="modal">
-            <h2>I'm a Modal</h2>
-            <p>Hear me roar.</p>
+<section id="componentApp">
+    <div data-tm-bgcolor="#e74c3c"
+         data-tm-textcolor="white"
+         data-tm-content="<div id='player-full-modal'></div>"
+         class="tm-modal tm-effect tm-draggable"
+         id="modal-youtube">
+        <div class="tm-wrapper">
+            <div class="tm-title">
+                <span class="tm-XButton tm-closeButton"></span>
+            </div>
+            <div class="tm-content"></div>
         </div>
     </div>
-</div>
-<section id="componentApp">
+
     <div class="header-nav">
         <div class="header-logo">
             <a href="/">
@@ -34,19 +39,19 @@
         </div>
         <ul class="header-menu">
             <li class="header-menu-items">
-                <a href="#" class='header-menu-item'>Headlines 1</a>
+                <a href="#componentApp" class='header-menu-item'>Headlines 1</a>
             </li>
             <li class="header-menu-items">
-                <a href="#" class='header-menu-item'>Headlines 2</a>
+                <a href="#componentDoing" class='header-menu-item'>Headlines 2</a>
             </li>
             <li class="header-menu-items">
-                <a href="#" class='header-menu-item'>Headlines 3</a>
+                <a href="#componentVideo" class='header-menu-item'>Headlines 3</a>
             </li>
             <li class="header-menu-items">
-                <a href="#" class='header-menu-item'>Headlines 4</a>
+                <a href="#componentAuthor" class='header-menu-item'>Headlines 4</a>
             </li>
             <li class="header-menu-items">
-                <a href="#" class='header-menu-item'>Headlines 5</a>
+                <a href="#componentFooter" class='header-menu-item'>Headlines 5</a>
             </li>
         </ul>
     </div>
@@ -83,8 +88,9 @@
         </div>
     </div>
 
-    <div id="video-full">
-        <button class="header-video-btn">
+    <!--<div id="video-full">-->
+    <div id="myMainContainer">
+        <button class="header-video-btn tm-trigger" data-tm-modal="modal-youtube">
             <i class="fa fa-play-circle header-video-icon" aria-hidden="true"></i>
         </button>
         <section class="header-video">
@@ -108,9 +114,39 @@
                 <li class="you-item">Dream cung cấp những giải pháp tài chính phù hợp.</li>
                 <li class="you-item">Lên kế hoạch và thực hiện. Bạn nên kiểm tra tiến độ thường xuyên.</li>
                 <li class="you-item">Và chúng tôi tin rằng đó chỉ là bước khởi đầu cho những ước mơ lớn hơn</li>
-                <span class="you-more">...</span>
+                <span class="you-more tm-trigger" data-tm-modal="modal-you-need" >...</span>
             </ul>
         </section>
+    </div>
+    <div data-tm-title="Why do i need this"
+         data-tm-bgcolor="#4A5348"
+         data-tm-textcolor="white"
+         data-tm-content=""
+         class="tm-modal tm-effect tm-draggable"
+         id="modal-you-need">
+        <div class="tm-wrapper">
+            <div class="tm-title">
+                <span class="tm-XButton tm-closeButton"></span>
+                <h3 class="tm-title-text"></h3>
+            </div>
+            <div class="tm-content">
+            </div>
+        </div>
+    </div>
+    <div data-tm-title="Why do i need this"
+         data-tm-bgcolor="#4A5348"
+         data-tm-textcolor="white"
+         data-tm-content="My background color is red! :-) <p><b>And I will self-destruct in 3 seconds</b>"
+         class="tm-modal tm-effect tm-draggable"
+         id="modal-you-sell">
+        <div class="tm-wrapper">
+            <div class="tm-title">
+                <span class="tm-XButton tm-closeButton"></span>
+                <h3 class="tm-title-text"></h3>
+            </div>
+            <div class="tm-content">
+            </div>
+        </div>
     </div>
     <div class="you-video" id="player-doing" data-id="489HLBsev8M"></div>
     <div class="you">
@@ -121,12 +157,11 @@
                 <li class="you-item">Dream cung cấp những giải pháp tài chính phù hợp.</li>
                 <li class="you-item">Lên kế hoạch và thực hiện. Bạn nên kiểm tra tiến độ thường xuyên.</li>
                 <li class="you-item">Và chúng tôi tin rằng đó chỉ là bước khởi đầu cho những ước mơ lớn hơn</li>
-                <span class="you-more">...</span>
+                <span class="you-more tm-trigger" data-tm-modal="modal-you-sell" >...</span>
             </ul>
         </section>
     </div>
 </section>
-
 
 <section id="componentVideo">
     <div class="bg-barrier"></div>

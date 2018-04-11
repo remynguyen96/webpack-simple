@@ -2,6 +2,7 @@ import '../css/app.scss';
 import { YoutubeApi } from './youtube';
 import { tns } from 'tiny-slider/src/tiny-slider.module';
 import './scroll';
+import './modal';
 import ScrollReveal from 'scrollreveal/dist/scrollreveal.min';
 const sr = new ScrollReveal({
   viewFactor : 0.15,
@@ -9,7 +10,6 @@ const sr = new ScrollReveal({
   distance   : "0px",
   scale      : 0.8,
 });
-
 
 const { innerWidth } = window;
 const loadYT = new Promise((resolve) => {
@@ -48,6 +48,15 @@ const confixAutoplay = {
 };
 
 if (innerWidth > 1024) {
+  let timeOut;
+  const btnPlay = document.querySelector('.header-video-btn');
+  btnPlay.onclick = () => {
+    clearTimeout(timeOut);
+    timeOut = setTimeout(() => {
+      const playerFullModal = document.getElementById('player-full-modal');
+      YoutubeApi(Object.assign({}, settingsFull, { element: playerFullModal, autoplay: 1, controls: 1 }));
+    }, 450);
+  };
   settingsFull.onPlayerReady = (event) => {
     event.target.mute();
     event.target.setVolume(0);
@@ -76,36 +85,36 @@ if (innerWidth <= 768) {
 }
 
 YoutubeApi(settingsFull);
-const playerDoing = document.getElementById('player-doing');
-YoutubeApi({
-  loadYT,
-  videoId: playerDoing.getAttribute('data-id'),
-  element: playerDoing,
-});
-const playerContact = document.getElementById('player-contact');
-YoutubeApi({
-  loadYT,
-  videoId: playerContact.getAttribute('data-id'),
-  element: playerContact,
-});
+// const playerDoing = document.getElementById('player-doing');
+// YoutubeApi({
+//   loadYT,
+//   videoId: playerDoing.getAttribute('data-id'),
+//   element: playerDoing,
+// });
+// const playerContact = document.getElementById('player-contact');
+// YoutubeApi({
+//   loadYT,
+//   videoId: playerContact.getAttribute('data-id'),
+//   element: playerContact,
+// });
 
 
-const videoSlider = document.querySelectorAll('.yt-player');
-videoSlider.forEach((video) => {
-  YoutubeApi({
-    loadYT,
-    videoId: video.getAttribute('data-id'),
-    element: video,
-  });
-});
-const authorSlider = document.querySelectorAll('.author-player');
-authorSlider.forEach((author) => {
-  YoutubeApi({
-    loadYT,
-    videoId: author.getAttribute('data-id'),
-    element: author,
-  });
-});
+// const videoSlider = document.querySelectorAll('.yt-player');
+// videoSlider.forEach((video) => {
+//   YoutubeApi({
+//     loadYT,
+//     videoId: video.getAttribute('data-id'),
+//     element: video,
+//   });
+// });
+// const authorSlider = document.querySelectorAll('.author-player');
+// authorSlider.forEach((author) => {
+//   YoutubeApi({
+//     loadYT,
+//     videoId: author.getAttribute('data-id'),
+//     element: author,
+//   });
+// });
 
 // sr.reveal("#test1", {
 //   origin   : "top",

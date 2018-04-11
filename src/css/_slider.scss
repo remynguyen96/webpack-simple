@@ -173,6 +173,7 @@
 .author {
   .tns-controls {
     button {
+      margin-top: 3rem;
       &:last-child {
         &::after {
           content: "\f105";
@@ -182,6 +183,31 @@
         &::after {
           content: "\f104";
         }
+      }
+    }
+  }
+}
+
+.video-bg {
+  .tns-controls {
+    button {
+      margin-top: -2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .video-bg {
+    .tns-controls {
+      button {
+        margin-top: -5rem;
+      }
+    }
+  }
+  .author {
+    .tns-controls {
+      button {
+        margin-top: -2rem;
       }
     }
   }
