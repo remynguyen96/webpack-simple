@@ -173,7 +173,8 @@ label {
 }
 .btn-submit {
   background: #caad3f;
-  color: #f6efd0;
+  color: #ffffff;
+  font-size: 1.8rem;
   border: none;
   padding: 10px 20px;
   border-radius: 3px;
@@ -211,64 +212,6 @@ label {
     animation: pulse .8s linear infinite alternate;
   }
 }
-
-@media only screen and (max-width: 1024px) {
-  .footer {
-    &-title {
-      width: 80%;
-      &::after {
-        margin-top: 12rem;
-      }
-    }
-    &-map {
-      padding: 0 4%;
-    }
-  }
-  #contact-us {
-    padding: 12rem 5% 0;
-  }
-};
-@media only screen and (max-width: 768px) {
-  .footer {
-    &-title {
-      width: 92%;
-      &::after {
-        margin-top: 14rem;
-      }
-    }
-    &-map {
-      flex-direction: column;
-    }
-    &-contact {
-      margin-bottom: 4rem;
-    }
-  }
-  #contact-us {
-    padding: 10rem 4% 0;
-    margin-bottom: 5rem;
-  }
-};
-
-@media only screen and (max-width: 414px) {
- .footer {
-    &-title {
-      width: 100%;
-    }
-  }
-  #contact-us {
-    flex-direction: column;
-  }
-  .contact {
-    &-us {
-      margin-top: 4.5rem;
-      width: 100%
-    }
-    &-video {
-      max-width: 100%;
-    }
-  }
-}
-
 
 
 

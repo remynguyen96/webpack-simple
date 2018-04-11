@@ -83,50 +83,5 @@
     cursor: pointer;
   }
 }
-@media only screen and (max-width: 1024px) {
-  #componentDoing {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-  .you {
-    flex-basis: 45%;
-    max-width: 45%;
-    &:last-child {
-      margin-top: 2%;
-    }
-  }
-};
-@media only screen and (max-width: 768px) {
-  #componentDoing {
-    background-color: rgb(18,19,22);
-  }
-  .you {
-    flex-basis: 60%;
-    max-width: 60%;
-    &:last-child {
-      margin-top: 5%;
-    }
-    &-video {
-      position: relative;
-      align-self: center;
-      left: 0;
-      transform: translate(0);
-      margin-top: 3.5rem;
-      max-width: 100%;
-    }
-    &-bg {
-      background-size: cover;
-    }
-  }
-}
-@media only screen and (max-width: 414px) {
-  .you {
-    flex-basis: 100%;
-    max-width: 100%;
-    &:last-child {
-      margin-top: 10%;
-    }
-  }
-}
 
 

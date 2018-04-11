@@ -18,7 +18,7 @@
 </head>
 <body>
 <section id="componentApp">
-    <div data-tm-bgcolor="#e74c3c"
+    <div data-tm-bgcolor="rgba(38, 38, 38, 0.89)"
          data-tm-textcolor="white"
          data-tm-content="<div id='player-full-modal'></div>"
          class="tm-modal tm-effect tm-draggable"
@@ -119,9 +119,14 @@
         </section>
     </div>
     <div data-tm-title="Why do i need this"
-         data-tm-bgcolor="#4A5348"
+         data-tm-bgcolor="rgba(38, 38, 38, 0.89)"
          data-tm-textcolor="white"
-         data-tm-content=""
+         data-tm-content="
+            <li class='you-item'>Chia sẻ về ước mơ của bạn.</li>
+            <li class='you-item'>Dream cung cấp những giải pháp tài chính phù hợp.</li>
+            <li class='you-item'>Lên kế hoạch và thực hiện. Bạn nên kiểm tra tiến độ thường xuyên.</li>
+            <li class='you-item'>Và chúng tôi tin rằng đó chỉ là bước khởi đầu cho những ước mơ lớn hơn</li>
+         "
          class="tm-modal tm-effect tm-draggable"
          id="modal-you-need">
         <div class="tm-wrapper">
@@ -133,10 +138,15 @@
             </div>
         </div>
     </div>
-    <div data-tm-title="Why do i need this"
-         data-tm-bgcolor="#4A5348"
+    <div data-tm-title="Why are you selling"
+         data-tm-bgcolor="rgba(38, 38, 38, 0.89)"
          data-tm-textcolor="white"
-         data-tm-content="My background color is red! :-) <p><b>And I will self-destruct in 3 seconds</b>"
+         data-tm-content="
+            <li class='you-item'>Chia sẻ về ước mơ của bạn.</li>
+            <li class='you-item'>Dream cung cấp những giải pháp tài chính phù hợp.</li>
+            <li class='you-item'>Lên kế hoạch và thực hiện. Bạn nên kiểm tra tiến độ thường xuyên.</li>
+            <li class='you-item'>Và chúng tôi tin rằng đó chỉ là bước khởi đầu cho những ước mơ lớn hơn</li>
+         "
          class="tm-modal tm-effect tm-draggable"
          id="modal-you-sell">
         <div class="tm-wrapper">
@@ -301,6 +311,30 @@
         <div class="copyright">Copyright © 2018, All rights reserved</div>
     </div>
 </section>
+<script>
+  function initMap() {
+    const mapCanvas = document.getElementById("google-map");
+    const myCenter = new google.maps.LatLng(10.8161408, 106.6721344);
+    const mapOptions = {
+      center: myCenter,
+      zoom: 12
+    };
+    const map = new google.maps.Map(mapCanvas,mapOptions);
+    const infowindow = new google.maps.InfoWindow({
+      content: "NetLeaders - Welcome to our community."
+    });
+    const marker = new google.maps.Marker({
+      position: myCenter,
+      icon: "images/location.png",
+      animation: google.maps.Animation.BOUNCE
+    });
+    infowindow.open(map, marker);
+    marker.setMap(map);
+  }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSq-3cHF-Ms405RAmtyWdF9GXaA1LmIis&callback=initMap">
+</script>
 </body>
 </html>
 

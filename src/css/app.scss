@@ -59,8 +59,8 @@ body {
     left: 0;
   }
 }
-@import './modal';
 @import './animation';
+@import './modal';
 @import './slider';
 @import './header';
 @import './fullVideo';
@@ -68,3 +68,4 @@ body {
 @import './video';
 @import './author';
 @import './footer';
+@import './responsive';

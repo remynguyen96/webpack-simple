@@ -54,29 +54,3 @@
     color: $white;
   }
 }
-
-@media only screen and (max-width: 1024px) {
-  & .header-video {
-    &-yt {
-      pointer-events: all;
-    }
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  & .header-video {
-    &-yt {
-      top: -11.2rem;
-      transform: skewY(3deg);
-    }
-  }
-}
-
-@media only screen and (max-width: 414px) {
-  & .header-video {
-    padding-bottom: 85.25%;
-    &-yt {
-      top: -7.8rem;
-    }
-  }
-}

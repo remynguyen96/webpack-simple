@@ -1,0 +1,376 @@
+@media only screen and (max-width: 1440px) {
+  .video-bg {
+    .tns-controls {
+      button {
+        margin-top: -5rem;
+      }
+    }
+  }
+  .author {
+    .tns-controls {
+      button {
+        margin-top: -2rem;
+      }
+    }
+  }
+  .yt-player {
+    width: calc(100vw / 4 + 25px);
+    height: calc(100vw / 4 - 50px);
+  }
+  .author {
+    &-player {
+      width: calc(100vw / 4 + 25px);
+      height: calc(100vw / 4 - 50px);
+    }
+    &-info {
+      padding: 2rem 8%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .header {
+    &-white-page {
+      margin-top: -25%;
+      padding-top: 15%;
+    }
+  }
+  #modal-you-need, #modal-you-sell {
+    .tm-wrapper {
+      width: 100%;
+    }
+  }
+  .yt-player {
+    width: 650px;
+    height: 500px;
+  }
+  .video-slider {
+    padding: 0 11%;
+    text-align: center;
+    & .tns-slide-active {
+      .yt-title {
+        transform: translate(-2rem, 0) scale(1.1);
+        line-height: 3rem;
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .author {
+    &-name {
+      font-size: 1.8rem;
+      line-height: 3.2rem;
+    }
+    &-desc {
+      font-size: 1.6rem;
+    }
+    &-player {
+      width: 680px;
+      height: 500px;
+      margin: 4rem 17rem;
+    }
+    &-info {
+      padding: 2rem 0;
+      margin-left: 25rem;
+    }
+  }
+  #componentDoing {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .you {
+    flex-basis: 45%;
+    max-width: 45%;
+    &:last-child {
+      margin-top: 2%;
+    }
+  }
+  .header-video {
+    &-yt {
+      pointer-events: all;
+    }
+  }
+  .footer {
+    &-title {
+      width: 80%;
+      &::after {
+        margin-top: 12rem;
+      }
+    }
+    &-map {
+      padding: 0 4%;
+    }
+  }
+  #contact-us {
+    padding: 12rem 5% 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .list-menu {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0 4rem;
+    transition: all 300ms ease;
+  }
+  .mobl {
+    display: block;
+    position: fixed;
+    z-index: 99;
+    padding: 2rem;
+    width: 100%;
+    &-logo {
+      max-width: 25%;
+    }
+    &-icon {
+      transition: all .3s ease-in-out;
+      display: block;
+      width: 22px;
+      height: 2px;
+      border-radius: 1px;
+      background-color: #fff;
+      + .mobl-icon {
+        margin-top: 5px;
+      }
+    }
+    &-btn {
+      background-color: transparent;
+      background-image: none;
+      cursor: pointer;
+      border: solid 1px transparent;
+      border-radius: 4px;
+      outline: 0;
+      position: absolute;
+      z-index: 100;
+      top: 3rem;
+      right: 2rem;
+      &.mobl-open {
+        & .mobl-icon:nth-child(1) {
+          transform: translate(-1px, 7px) rotate(-225deg);
+        }
+        & .mobl-icon:nth-child(2) {
+          opacity: 0;
+        }
+        & .mobl-icon:nth-child(3) {
+          transform: translate(-1px, -7px) rotate(225deg);
+        }
+      }
+    }
+    &-main {
+      position: absolute;
+      top: 0;
+      right: 0;
+      & .header-menu {
+        position: fixed;
+        flex-direction: column;
+        top: 5rem;
+        right: -32rem;
+        width: 320px;
+        height: 100vh;
+        background-color: red;
+        justify-content: flex-start;
+        margin-top: -5rem;
+        padding-top: 7rem;
+        background-color: #4F4F4F;
+        background: url(../images/bg-menu.jpg) no-repeat center center;
+        background-size: cover;
+      }
+      & .header-menu-items {
+        line-height: 5rem;
+        flex-basis: 8%;
+      }
+      &.mobl-main-open {
+        & .header-menu {
+          right: -5rem;
+        }
+      }
+    }
+  }
+
+  .header {
+    &-white-page {
+      margin-top: -20%;
+      padding-top: 5%;
+      height: 250px;
+    }
+  }
+
+  .video-slider {
+    & .tns-slide-active {
+      .yt-player {
+        width: 550px;
+        height: 500px;
+      }
+      .yt-title {
+        transform: translate(0) scale(1.1);
+        font-size: 2.4rem;
+      }
+    }
+  }
+  .author {
+    &-player {
+      max-width: 100%;
+      width: 500px;
+      height: 400px;
+    }
+  }
+  #componentDoing {
+    background-color: rgb(18,19,22);
+  }
+  .you {
+    flex-basis: 60%;
+    max-width: 60%;
+    &:last-child {
+      margin-top: 5%;
+    }
+    &-video {
+      position: relative;
+      align-self: center;
+      left: 0;
+      transform: translate(0);
+      margin-top: 3.5rem;
+      max-width: 100%;
+    }
+    &-bg {
+      background-size: cover;
+    }
+  }
+  .header-video {
+    &-yt {
+      top: -11.2rem;
+      transform: skewY(3deg);
+    }
+  }
+  .tns-controls {
+    display: none;
+  }
+  .footer {
+    &-title {
+      width: 92%;
+      &::after {
+        margin-top: 14rem;
+      }
+    }
+    &-map {
+      flex-direction: column;
+    }
+    &-contact {
+      margin-bottom: 4rem;
+    }
+  }
+  #contact-us {
+    padding: 10rem 4% 0;
+    margin-bottom: 5rem;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .header {
+    &-white-page {
+      margin-top: -25%;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      flex-direction: column;
+    }
+    &-btn-link {
+      &:first-child {
+        align-self: flex-start;
+      }
+      &:last-child {
+        align-self: flex-end;
+      }
+    }
+  }
+  .mobl {
+    &-logo {
+      max-width: 40%;
+    }
+  }
+  .yt-title {
+    padding: 0 4rem;
+  }
+  .author {
+    &-player {
+      width: 100%;
+      height: 300px;
+      margin: 4rem 25rem;
+    }
+    &-info {
+      padding: 0;
+      width: 100%;
+    }
+  }
+  .you {
+    flex-basis: 100%;
+    max-width: 100%;
+    &:last-child {
+      margin-top: 10%;
+    }
+  }
+  .header-video {
+    padding-bottom: 85.25%;
+    &-yt {
+      top: -7.8rem;
+    }
+  }
+  .footer {
+    &-title {
+      width: 100%;
+    }
+  }
+  #contact-us {
+    flex-direction: column;
+  }
+  .contact {
+    &-us {
+      margin-top: 4.5rem;
+      width: 100%
+    }
+    &-video {
+      max-width: 100%;
+    }
+  }
+
+  .yt-player {
+    width: 40vw;
+    height: 300px;
+  }
+
+  .video-slider {
+    padding: 0 5%;
+    & .tns-slide-active {
+      .yt-player {
+        width: 90vw;
+        height: 300px;
+      }
+      .yt-title {
+        font-size: 1.8rem;
+        padding: 0;
+        transform: translate(3rem, 0) scale(1.1);
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 375px) {
+  .header {
+    &-white-page {
+      margin-top: -26%;
+    }
+  }
+  .author {
+    &-player {
+      margin-left: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .header {
+    &-white-page {
+      margin-top: -30%;
+    }
+  }
+}
