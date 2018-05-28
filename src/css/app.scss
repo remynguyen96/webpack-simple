@@ -1,7 +1,11 @@
 @import '~normalize.css';
-$white: #ffffff;
-$yellow: #d8b063;
-$yellowLight: #ffc34f;
+@import '~materialize-css/dist/css/materialize.min.css';
+//@import '~materialize-css/sass/materialize';
+$blue: #2196f3;
+$blueLighten1: #42a5f5;
+$blueLighten2: #64b5f6;
+$greyDarken1: #424242;
+$greyDarken2: #212121;
 
 *,
 *:before,
@@ -18,14 +22,10 @@ body {
   height: 100%;
   width: 100%;
   font-size: 10px;
-  &.modal-active {
-    overflow: hidden;
-  }
 }
 
 body {
-  font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -45,27 +45,94 @@ body {
   border: 1px solid #ccc;
 }
 
-.bar {
+/*header-component*/
+.nav-vh {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+}
+.logo-vh {
+  display: inline-block;
+}
+.image-logo {
+  max-width: 100%;
+  margin-top: -15px;
+}
+.items-vh {
+  padding: 0 8rem;
+}
+.link-vh {
+  color: $greyDarken2;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: flex;
   position: relative;
-  display: block;
-  &:before {
+  &::after {
     content: '';
-    height: 2px;
-    width: 0;
-    bottom: 0;
     position: absolute;
-    background: #ffc34f;
-    transition: all 300ms ease;
+    width: 100%;
+    border-bottom: 2px solid #2196f3;
+    bottom: 0;
     left: 0;
+    transition: all 300ms ease;
+    transform: scaleX(0);
+  }
+  &:hover {
+    background-color: transparent;
+    &::after {
+      content: '';
+      transform: scaleX(1);
+    }
+  }
+  .material-icons {
+    align-self: center;
+    padding-right: 4px;
   }
 }
-@import './animation';
-@import './modal';
-@import './slider';
-@import './header';
-@import './fullVideo';
-@import './doing';
-@import './video';
-@import './author';
-@import './footer';
+.active-vh .link-vh {
+  &::after {
+    content: '';
+    transform: scaleX(1);
+  }
+}
+/*slider-component*/
+.carousel.carousel-slider .carousel-item, .carousel {
+  min-height: 580px;
+}
+/*intro-component*/
+.intro-component {
+  margin-top: 40px;
+  p {
+
+  }
+  strong {
+
+  }
+}
+.til-intro {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  &-dash {
+    position: absolute;
+    top: 49.99%;
+    width: 30%;
+    border-top-width: 3px;
+    border-top-style: double;
+    border-color: $blueLighten2;
+    &:first-child {
+      left: 5%;
+    }
+    &:last-child {
+      right: 5%;
+    }
+  }
+  &-name {
+    color: $blueLighten1;
+    font-size: 2.8rem;
+  }
+}
+
 @import './responsive';
