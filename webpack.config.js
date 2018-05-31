@@ -84,8 +84,8 @@ module.exports = {
       title: 'Vinhomes Products Detail',
       inject: true,
       hash: true,
-      filename: 'products-details.html',
-      template: 'src/products-details.html',
+      filename: 'product-details.html',
+      template: 'src/product-details.html',
     }),
     new HtmlWebpackPlugin({
       title: 'Vinhomes Process',

@@ -6,30 +6,32 @@ M.AutoInit();
 
 const functionSlider = (nav, heightWindow) => {
   const elems = document.querySelector('.carousel');
-  const minHeight = `${heightWindow - nav.offsetHeight}px`;
-  elems.style.minHeight = minHeight;
-  const carouselItems = document.querySelectorAll('.carousel-item');
-  const carouselImages = document.querySelectorAll('.carousel-item img');
-  carouselItems.forEach((item) => {
-    item.style.minHeight = minHeight;
-  });
-  carouselImages.forEach((img) => {
-    img.onclick = function(e) {
-      const href = e.target.getAttribute('attr-href');
-      window.open(href, '_blank');
-    }
-  });
-  const options = {
-    duration: 400,
-    fullWidth: false,
-    dist: 0,
-    indicators: true
-  };
-  M.Carousel.init(elems, options);
-  const instance = M.Carousel.getInstance(elems);
-  setInterval(() => {
-    instance.next();
-  }, 4800);
+  if (elems) {
+    const minHeight = `${heightWindow - nav.offsetHeight}px`;
+    elems.style.minHeight = minHeight;
+    const carouselItems = document.querySelectorAll('.carousel-item');
+    const carouselImages = document.querySelectorAll('.carousel-item img');
+    carouselItems.forEach((item) => {
+      item.style.minHeight = minHeight;
+    });
+    carouselImages.forEach((img) => {
+      img.onclick = function(e) {
+        const href = e.target.getAttribute('attr-href');
+        window.open(href, '_blank');
+      }
+    });
+    const options = {
+      duration: 400,
+      fullWidth: false,
+      dist: 0,
+      indicators: true
+    };
+    M.Carousel.init(elems, options);
+    const instance = M.Carousel.getInstance(elems);
+    setInterval(() => {
+      instance.next();
+    }, 4800);
+  }
 };
 
 const scrollNav = (nav) => {
@@ -48,8 +50,9 @@ document.addEventListener('DOMContentLoaded', function() {
   const nav = document.querySelector('.nav-vh');
   functionSlider(nav, heightWindow);
   scrollNav(nav);
+  const parallax = document.querySelector('.parallax');
+  M.Parallax.init(parallax, { responsiveThreshold: 5 });
 });
-
 
 const sr = new ScrollReveal({
   viewFactor : 0.15,
@@ -95,7 +98,6 @@ gifts.forEach((gift) => {
 });
 
 sr.reveal(".intro-desc", configReveal("top", "10px", .95));
-sr.reveal(".register-vh", configReveal("bottom", "20px", .8));
 
 
 

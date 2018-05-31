@@ -8,6 +8,7 @@
     "start": "webpack-dev-server --port 3500",
     "start:open": "webpack-dev-server --open --port 3500",
     "prepublish": "babel src/ -d lib/",
+    "deploy": "firebase deploy",
     "build": "webpack -p"
   },
   "keywords": [],
