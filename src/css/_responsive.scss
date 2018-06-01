@@ -1,18 +1,47 @@
 @media only screen and (max-width: 1440px) {
-  .home-component, .process-component, .process-detail-component, .contact-component {
-    width: 85%;
-  }
-  .product-component .container {
+  .home-component, .process-component, .process-detail-component, .contact-component, .detail-component, .product-component .container {
     width: 85%;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-
+  .home-component, .process-component, .process-detail-component, .contact-component, .detail-component, .product-component .container {
+    width: 92%;
+  }
+  .home-component, .process-component, .process-detail-component, .contact-component, .detail-component, .product-component .container {
+    width: 100%;
+  }
+  .items-vh {
+    padding: 0 4rem;
+  }
+  .slider-component {
+    .carousel.carousel-slider, .carousel.carousel-slider .carousel-item {
+      min-height: 600px;
+    }
+  }
+  .footer-component {
+    .container {
+      width: 100%;
+    }
+  }
+  .reason-component {
+    .reason.col {
+      width: 50%;
+    }
+  }
 }
 
 @media only screen and (max-width: 768px) {
-
+  .slider-component {
+    .carousel.carousel-slider, .carousel.carousel-slider .carousel-item {
+      min-height: auto;
+    }
+  }
+  .reason-component {
+    .reason.col {
+      width: 50%;
+    }
+  }
 }
 
 @media only screen and (max-width: 414px) {

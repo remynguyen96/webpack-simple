@@ -50,17 +50,8 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   /*Tab Detail*/
   const tabs = document.querySelector('.tabs-detail');
-  const sliderTab = document.querySelector('.content.carousel');
-  if (tabs && sliderTab) {
-    M.Tabs.init(tabs, { swipeable: true });
-    M.Carousel.init(sliderTab, {
-      duration: 450,
-      fullWidth: true,
-      dist: 0,
-    });
-    const instance = M.Carousel.getInstance(sliderTab);
-    instance.dragged = true;
-    instance.pressed = true;
+  if (tabs) {
+    M.Tabs.init(tabs, {});
   }
 });
 /*Scroll Page*/
