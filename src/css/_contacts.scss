@@ -56,6 +56,9 @@
     font-size: 1.4rem;
     line-height: 40px;
     height: 40px;
-    background: $blue;
+    background-color: $blue;
+    &:hover {
+      background-color: $blueLighten2;
+    }
   }
 }

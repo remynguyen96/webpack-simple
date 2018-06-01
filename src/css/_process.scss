@@ -36,9 +36,10 @@
   }
   &-detail-img {
     margin-bottom: 25px;
-    //img {
-    //  object-fit: contain;
-    //}
+    img {
+      height: 240px;
+      object-fit: cover;
+    }
   }
 }
 
