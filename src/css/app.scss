@@ -59,11 +59,14 @@ body {
     display: flex;
     justify-content: space-around;
     transition: all .3s ease-in-out;
+    box-shadow: 0 0 0 0;
+    z-index: 99;
   }
   &-scroll {
     position: fixed;
     background-color: rgba(234, 248, 255, 0.7);
     animation: scroll 1s ease-out 1;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
   }
 }
 @-webkit-keyframes scroll {
@@ -77,6 +80,49 @@ body {
   50% {transform: translateY(2px);}
   100% {transform: translateY(0);}
 }
+.btn-register {
+  border: 1px solid $blueLighten2;
+  padding: 15px 30px;
+  border-radius: 4px;
+  color: $blue;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+  display: block;
+  max-width: 30%;
+  margin: 35px auto;
+  cursor: pointer;
+  text-align: center;
+  transition: color 0.4s ease-in;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all 0.4s;
+    transform: scale(0.5, 1);
+  }
+  &:hover {
+    color: #ffffff;
+    &:before {
+      content: '';
+      opacity: 1;
+      transform: scale(1, 1);
+      background-color: #3e82ff;
+    }
+  }
+}
+.btn-mobile {
+  display: none;
+}
 .logo-vh {
   display: inline-block;
 }
@@ -86,13 +132,15 @@ body {
 }
 .items-vh {
   padding: 0 8rem;
+  .link-vh {
+    color: $greyDarken2;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: flex;
+  }
 }
 .link-vh {
-  color: $greyDarken2;
-  text-transform: capitalize;
-  font-size: 1.8rem;
-  font-weight: 600;
-  display: flex;
   position: relative;
   &::after {
     content: '';
@@ -119,6 +167,9 @@ body {
 }
 .active-vh .link-vh {
   color: $blue;
+  .material-icons {
+    color: $blue;
+  }
   &::after {
     content: '';
     transform: scaleX(1);
@@ -159,6 +210,7 @@ body {
     color: $blueLighten1;
     font-size: 2.5rem;
     text-transform: uppercase;
+    line-height: 35px;
   }
 }
 .intro-desc {
@@ -477,47 +529,6 @@ body {
       position: absolute;
       top: 50%;
       left: 0;
-    }
-  }
-}
-
-.btn-register {
-  border: 1px solid $blueLighten2;
-  padding: 15px 30px;
-  border-radius: 4px;
-  color: $blue;
-  text-transform: uppercase;
-  font-size: 1.8rem;
-  letter-spacing: 2px;
-  position: relative;
-  z-index: 1;
-  background-color: transparent;
-  display: block;
-  max-width: 30%;
-  margin: 35px auto;
-  cursor: pointer;
-  text-align: center;
-  transition: color 0.4s ease-in;
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0;
-    background-color: rgba(255, 255, 255, 0.5);
-    transition: all 0.4s;
-    transform: scale(0.5, 1);
-  }
-  &:hover {
-    color: #ffffff;
-    &:before {
-      content: '';
-      opacity: 1;
-      transform: scale(1, 1);
-      background-color: #3e82ff;
     }
   }
 }

@@ -67,29 +67,36 @@ const configReveal = (origin= "top", distance= "50px", scale= 0) => ({
   duration: 1200,
   scale,
 });
-const titles = document.querySelectorAll('.title');
-const reasons = document.querySelectorAll('.reason');
-const financials = document.querySelectorAll('.financial-info');
-const clients = document.querySelectorAll('.clients-info');
-const gifts = document.querySelectorAll('.gift-info');
-financials.forEach((_, index) => {
-  if (index % 2 === 0) {
-    sr.reveal(reasons[index], configReveal("left", "30px", .65));
-    sr.reveal(gifts[index], configReveal("top", "40px", .7));
-    sr.reveal(financials[index], configReveal("left", "40px", .7));
-  } else {
-    sr.reveal(reasons[index], configReveal("right", "30px", .65));
-    sr.reveal(gifts[index], configReveal("bottom", "40px", .7));
-    sr.reveal(financials[index], configReveal("right", "40px", .7));
+const loopElement = (el = '.product', position = []) => {
+  const element = document.querySelectorAll(el);
+  if (element.length) {
+    if (position.length === 2) {
+      element.forEach((items, index) => {
+        if (index % 2 === 0) {
+          sr.reveal(items, configReveal(position[0], '30px', .8));
+        } else {
+          sr.reveal(items, configReveal(position[1], '30px', .8));
+        }
+      });
+    } else {
+      element.forEach((items) => {
+        sr.reveal(items, configReveal(position[0], '40px', .7));
+      });
+    }
   }
-  sr.reveal(titles[index], configReveal("bottom", "40px", .8));
-  sr.reveal(clients[index], configReveal("top", "40px", .7));
-});
-sr.reveal(".intro-desc", configReveal("top", "10px", .8));
-sr.reveal(".youtube-vh", configReveal("bottom", "30px", .8));
-
-
-
-
-
-
+};
+const leftRight = ['left', 'right'];
+const topBottom = ['top', 'bottom'];
+loopElement('.reason', leftRight);
+loopElement('.financial-info', leftRight);
+loopElement('.gift-info', topBottom);
+loopElement('.clients-info', topBottom[0]);
+loopElement('.title', topBottom[1]);
+loopElement('.product', leftRight);
+loopElement('.process', leftRight);
+loopElement('.process-detail-img', topBottom[1]);
+sr.reveal(".content", configReveal(topBottom[1], "20px", .7));
+sr.reveal(".intro-desc", configReveal(topBottom[0], "10px", .7));
+sr.reveal(".youtube-vh", configReveal(topBottom[1], "30px", .7));
+sr.reveal(".form-register", configReveal(topBottom[0], "30px", .7));
+sr.reveal(".contact-component", configReveal(topBottom[1], "30px", .7));
