@@ -11,7 +11,7 @@
   .contact-component {
     width: 100%;
   }
-  .items-vh {
+  .menu-item {
     padding: 0 4rem;
   }
   .slider-component {
@@ -32,9 +32,9 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .items-vh {
+  .menu-item {
     padding: 0 0 25px 0;
-    .link-vh {
+    a {
       text-transform: uppercase;
     }
   }
@@ -99,9 +99,9 @@
     font-size: 1.5rem;
     line-height: 40px;
   }
-  .items-vh {
+  .menu-item {
     padding: 0 0 20px 0;
-    .link-vh {
+    a {
       font-weight: 400;
       font-size: 1.6rem;
     }

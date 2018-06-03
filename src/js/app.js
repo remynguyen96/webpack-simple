@@ -1,8 +1,16 @@
 import '../css/app.scss';
+import product from '../images/product4.jpg';
+import logo from '../images/logo-footer.png';
 import M from 'materialize-css/dist/js/materialize.min';
 import ScrollReveal from 'scrollreveal/dist/scrollreveal.min';
 
 M.AutoInit();
+const createElement = (text) => {
+  const iElement = document.createElement('i');
+  iElement.classList.add('material-icons');
+  iElement.innerText = text;
+  return iElement;
+};
 const functionSlider = () => {
   const carouselPrimary = document.querySelector('.slider-component > .carousel');
   if (carouselPrimary) {
@@ -41,6 +49,34 @@ const scrollNav = () => {
   }
 };
 document.addEventListener('DOMContentLoaded', function() {
+  /*Menu*/
+  const navMenu = document.querySelector('#slide-out');
+  const listMenuItems = document.querySelectorAll('.menu-item > a');
+  const arrIcons = ['home', 'location_city', 'equalizer', 'create'];
+  if (listMenuItems.length) {
+    listMenuItems.forEach((items, index) => {
+      const iElement = createElement(arrIcons[index]);
+      items.classList.add('waves-effect');
+      items.insertBefore(iElement, items.childNodes[0]);
+    });
+  }
+  if (window.innerWidth <= 768) {
+    navMenu.classList.remove('m12');
+    navMenu.classList.remove('col');
+    navMenu.classList.remove('menu-desktop');
+    const element = document.createElement('li');
+    element.innerHTML = `
+      <div class="user-view">
+        <div class="background">
+            <img class="responsive-img" src="${product}">
+        </div>
+        <img class="responsive-img" src="${logo}" alt="logo">
+      </div>
+    `;
+    navMenu.insertBefore(element, navMenu.childNodes[0]);
+  } else {
+    navMenu.classList.remove('sidenav');
+  }
   functionSlider();
   scrollNav();
   /*Parallax*/
@@ -54,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
     M.Tabs.init(tabs, {});
   }
 });
-/*Scroll Page*/
+/*Scroll Animation Page*/
 const sr = new ScrollReveal({
   viewFactor : 0.15,
   duration   : 800,
