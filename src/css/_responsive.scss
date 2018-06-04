@@ -1,190 +1,23 @@
 @media only screen and (max-width: 1440px) {
-  .home-component, .process-component, .process-detail-component, .contact-component, .detail-component, .product-component .container {
-    width: 85%;
-  }
+
 }
 
 @media only screen and (max-width: 1024px) {
-  .home-component, .process-component, .process-detail-component, .detail-component, .product-component .container {
-    width: 92%;
-  }
-  .contact-component {
-    width: 100%;
-  }
-  .menu-item {
-    padding: 0 4rem;
-  }
-  .slider-component {
-    .carousel.carousel-slider, .carousel.carousel-slider .carousel-item {
-      min-height: 600px;
-    }
-  }
-  .footer-component {
-    .container {
-      width: 100%;
-    }
-  }
-  .reason-component {
-    .reason.col {
-      width: 50%;
-    }
-  }
+
 }
 
 @media only screen and (max-width: 768px) {
-  .menu-item {
-    padding: 0 0 25px 0;
-    a {
-      text-transform: uppercase;
-    }
-  }
-  .nav-vh {
-    position: fixed;
-  }
-  .btn-nav {
-    color: $blue;
-  }
-  .btn-register {
-    max-width: 50%
-  }
-  .btn-mobile {
-    display: block;
-    padding: 0 40px;
-    border-radius: 25px;
-    letter-spacing: 3px;
-    background-color: rgba(222, 245, 255, 0.85);
-    margin: 10px auto;
-    line-height: 48px;
-    &:hover {
-      &:before {
-        content: '';
-        border-radius: 25px;
-      }
-    }
-  }
-  .menu-desktop {
-    display: none;
-  }
-  .slider-component {
-    .carousel.carousel-slider, .carousel.carousel-slider .carousel-item {
-      min-height: auto;
-    }
-  }
-  .reason-component {
-    .reason.col {
-      width: 50%;
-    }
-  }
-  .col.m4.process {
-    width: 50%;
-    img {
-      height: 300px;
-    }
-  }
-  .process-detail-img img {
-    object-fit: initial;
-    width: 100%;
-  }
-  .col.m3.process-detail-img, .col.m4.product {
-    width: 50%;
-  }
+
 }
 
 @media only screen and (max-width: 414px) {
-  .home-component, .process-component, .process-detail-component, .detail-component, .product-component .container {
-    width: 98%;
-  }
-  .btn-mobile {
-    letter-spacing: 0;
-    font-size: 1.5rem;
-    line-height: 40px;
-  }
-  .menu-item {
-    padding: 0 0 20px 0;
-    a {
-      font-weight: 400;
-      font-size: 1.6rem;
-    }
-  }
-  .card .card-content {
-    height: auto;
-  }
-  .slider-component {
-    .carousel.carousel-slider, .carousel.carousel-slider .carousel-item {
-      height: 340px;
-    }
-    .carousel .carousel-item>img {
-      height: 330px;
-      object-fit: cover;
-    }
-  }
-  .intro-component {
-    margin: 15px 0 15px;
-  }
-  .reason-component {
-    .reason.col {
-      width: auto;
-    }
-  }
-  .gift-info-connects {
-    display: none;
-  }
-  .gift-info-txt {
-    margin-top: 0;
-  }
-  .youtube-vh {
-    margin-bottom: 5px;
-  }
-  .col.s12.copyright-img {
-    max-width: 40%;
-    margin-left: 30%;
-  }
-  .col.m4.product, .col.m4.process, .col.m3.process-detail-img {
-    width: 100%;
-  }
-  .btn-register {
-    max-width: 100%;
-  }
-  .parallax-container {
-    height: 350px;
-    .parallax img {
-      object-fit: cover;
-    }
-  }
-  .bg-contact-txt {
-    width: 100%;
-    padding: 0;
-  }
-  .bg-contact-phone {
-    top: 20%;
-  }
-  .page-title {
-    font-size: 2.4rem;
-  }
-  .product-til {
-    white-space: initial;
-  }
-  .card .card-image img, .col.m4.process img, .process-detail-img img {
-    height: auto;
-  }
-  .process-name {
-    height: auto;
-    line-height: 30px;
-  }
+
 }
 
 @media only screen and (max-width: 375px) {
-  .page-title {
-    font-size: 2.2rem;
-  }
+
 }
 
 @media only screen and (max-width: 320px) {
-  .page-title {
-    font-size: 2rem;
-  }
-  .btn-mobile {
-    padding: 0 30px;
-    font-size: 1.2rem;
-  }
+
 }
