@@ -1,12 +1,9 @@
 @import '~normalize.css';
 @import '~materialize-css/dist/css/materialize.min.css';
-$blue: #2196f3;
-$blueLighten1: #42a5f5;
-$blueLighten2: #68baff;
-$blueLighten3: #e1f5fe;
-$blueLighten4: #01579b;
-$greyDarken1: #424242;
-$greyDarken2: #212121;
+$blue: #40739e;
+$dark: #353b48;
+$gray: #7f8fa6;
+
 .material-icons {
   direction: ltr;
   display: inline-block;
@@ -41,7 +38,7 @@ body {
 }
 
 body {
-  background-color: #ebebeb;
+  //background-color: #ebebeb;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -61,38 +58,99 @@ body {
   background: #767777;
   border: 1px solid #ccc;
 }
-
+.btn-register {
+  border: 1px solid $blue;
+  padding: 15px 30px;
+  border-radius: 4px;
+  color: $blue;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+  display: block;
+  max-width: 100%;
+  margin: 35px auto;
+  cursor: pointer;
+  text-align: center;
+  transition: color 0.4s ease-in;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all 0.4s;
+    transform: scale(0.5, 1);
+  }
+  &:hover {
+    color: #ffffff;
+    &:before {
+      content: '';
+      opacity: 1;
+      transform: scale(1, 1);
+      background-color: $gray;
+    }
+  }
+}
+@mixin textP {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: $dark;
+  line-height: 30px;
+}
+@mixin titleH3 {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: $blue;
+  font-size: 2.8rem;
+  margin-bottom: 25px;
+}
+/*menu-component*/
 .vinhome {
   &-nav {
     display: flex;
     justify-content: space-around;
-  }
-  &-logo {
-    &-img {
-
-    }
-  }
-  &-menu {
-
+    align-items: center;
+    max-height: 65px;
+    background-color: rgba(255, 255, 255, 0.85);
+    margin-bottom: -65px;
+    position: relative;
+    z-index: 99;
   }
 }
 .primary-menu {
   display: flex;
   > li {
     position: relative;
-    padding: 3rem 8rem;
+    padding: 3rem 5rem;
     cursor: pointer;
     &:hover {
       .sub-menu {
-        display: block;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+      > a {
+        &:before {
+          content: '';
+          width: 100%;
+        }
       }
     }
   }
   a {
     font-weight: 500;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
     position: relative;
+    color: $dark;
   }
 }
 .primary-menu > .menu-item > a {
@@ -100,18 +158,22 @@ body {
   &:before {
     content: '';
     position: absolute;
-    width: 100%;
+    width: 0;
+    transition: width 250ms ease-in-out;
     height: 2px;
-    background-color: #949494;
+    background-color: $blue;
     bottom: -10px;
   }
 }
 .sub-menu {
   position: absolute;
-  display: none;
-  margin: 7px 0 0;
-  background-color: rgba(178, 230, 249, 0.65);
-  width: 100%;
+  transition: all 290ms;
+  transform: translateY(10px);
+  opacity: 0;
+  visibility: hidden;
+  margin: 5px 0 0;
+  background-color: rgba(245, 246, 250, 0.9);
+  min-width: 210px;
   .menu-item {
     line-height: 40px;
     border-bottom: 1px solid #4f4f4f;
@@ -119,10 +181,13 @@ body {
       border-bottom: none;
     }
     a {
-      padding-left: 40px;
       width: 100%;
       display: inline-block;
       vertical-align: middle;
+      padding: 0 15px 0 40px;
+      font-size: 1.4rem;
+      white-space: nowrap;
+      transition: all 250ms;
       &:before {
         @extend .material-icons;
         content: 'chevron_right';
@@ -130,17 +195,325 @@ body {
         font-size: 2rem;
         bottom: 10px;
         left: 10px;
+        transform: translateX(0);
+        transition: transform 250ms;
+      }
+    }
+    &:hover {
+      a {
+        &:before {
+          content: 'chevron_right';
+          transform: translateX(5px);
+        }
       }
     }
   }
-
-}
-.current-menu-item {
-
 }
 
+.menu-item.current-menu-item {
+  > a {
+    &:before {
+      content: '';
+      width: 100%;
+    }
+  }
+}
+/*slider-component*/
+.slider-component {
+  .carousel.carousel-slider, .carousel.carousel-slider .carousel-item {
+    min-height: calc(100vh - 65px);
+  }
+}
+/*home-component*/
+.home-component {
+  background: url(../images/bg-intro.jpg) no-repeat top 370px center;
+}
+.title {
+  &-home {
+    margin: 65px 0;
+  }
+  &-vh {
+    color: #333333;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 20px;
+    position: relative;
+    margin: 25px 0 15px;
+    &:before {
+      content: "";
+      width: 2px;
+      height: 45px;
+      position: absolute;
+      top: -60px;
+      left: 50%;
+      border-left: 2px solid $blue;
+    }
+  }
+  &-slogan {
+    font-size: 4rem;
+    text-align: center;
+    color: $blue;
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    line-height: 44px;
+    position: relative;
+    span {
+      display: block;
+    }
+    &:after {
+      content: "";
+      z-index: 99;
+      width: 2px;
+      height: 45px;
+      position: absolute;
+      bottom: -60px;
+      left: 50%;
+      border-left: 2px solid $blue;
+    }
+  }
+}
 
+.intro, .util, .envi {
+  padding-top: 60px;
+  display: flex;
+  width: 100%;
+  &-img {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    &:before {
+      position: absolute;
+      top: 0;
+      left: -75%;
+      z-index: 2;
+      display: block;
+      content: '';
+      width: 50%;
+      height: 100%;
+      background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+      background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+      transform: skewX(-25deg);
+    }
+    &:hover {
+      &:before {
+        animation: shine 1.5s;
+      }
+    }
+  }
+  &-title {
+    @include titleH3;
+  }
+  &-desc {
+    align-self: center;
+   p {
+     @include textP;
+   }
+  }
+}
+.util {
+  margin-top: 30px;
+}
+.envi {
+  flex-direction: column;
+  text-align: center;
+}
+/*reason-component*/
+.reason {
+  &-component {
+    padding: 8rem 0;
+    background-image: url(../images/bg-about-house.png);
+    background-size: cover;
+  }
+  &-title {
+    @include titleH3;
+    margin-bottom: 35px;
+  }
+  p {
+    @include textP;
+    .material-icons {
+      display: inline-block;
+      color: #273c75;
+      padding-right: 8px;
+      margin-bottom: 6px;
+      vertical-align: middle;
+    }
+  }
+  &-register {
+    @extend .btn-register;
+  }
+}
+/*products-component*/
+.products {
+  &-component {
+    margin: 35px 0;
+  }
+  &-title {
+    @include titleH3;
+  }
+  &-info {
+    margin-bottom: 20px;
+    .card {
+      &-image {
+        overflow: hidden;
+        img {
+          transition: transform 300ms;
+          transform: scale(1);
+        }
+      }
+      &:hover {
+         box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -7px rgba(0,0,0,0.2);
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
 
-
+.card-content {
+  padding: 5px 18px 20px;
+  &-items {
+    list-style-type: none;
+    font-size: 1.6rem;
+    color: $dark;
+    font-weight: 400;
+    text-align: right;
+    line-height: 28px;
+    span {
+      display: inline-block;
+      float: left;
+    }
+  }
+}
+/*video-component*/
+.video {
+  &-component {
+    background: url(../images/bg-video.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 9rem 0;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  &-title {
+    @include titleH3;
+    color: #f5f6fa;
+    line-height: 35px;
+  }
+  &-desc {
+    @include textP;
+    color: #f5f6fa;
+  }
+  &-play {
+    cursor: pointer;
+    margin-top: 45px;
+    background-color: $gray;
+    i {
+      font-size:5rem;
+      color: #ffffff;
+    }
+  }
+}
+/*Cell Phone*/
+.vinhomes-phone {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  visibility: visible;
+  background-color: transparent;
+  width: 110px;
+  height: 110px;
+  cursor: pointer;
+  z-index: 200000;
+}
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.vinhomes-phone-circle {
+  width: 90px;
+  height: 90px;
+  top: 12px;
+  left: 12px;
+  position: absolute;
+  background-color: transparent;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  border: 2px solid rgba(30, 30, 30, 0.4);
+  opacity: .1;
+  border-color: #4b7baf;
+  opacity: .5;
+  &-fill {
+    width: 60px;
+    height: 60px;
+    top: 28px;
+    left: 28px;
+    position: absolute;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    background-color: rgba(101, 180, 248, 0.75);
+    opacity: .75 !important;
+  }
+}
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+.tada {
+  -webkit-animation-name: tada;
+  animation-name: tada;
+}
+.vinhomes-phone-img {
+  width: 30px;
+  height: 30px;
+  top: 43px;
+  left: 43px;
+  position: absolute;
+  background: rgba(30, 30, 30, 0.1) url('../images/phone.png') no-repeat center center;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  border: 2px solid transparent;
+  opacity: .7;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  background-color: #53abf4;
+  background-size: 70%;
+}
 
 @import './responsive';
