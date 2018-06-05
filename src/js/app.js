@@ -33,9 +33,19 @@ const scrollNav = () => {
     });
   }
 };
+
+const showVideo = () => {
+  const video = document.querySelector('.video-play');
+  video.onclick = (e) => {
+    e.preventDefault();
+    console.log('sdsadsadsad');
+  };
+};
+
 document.addEventListener('DOMContentLoaded', function() {
   functionSlider();
-  // scrollNav();
+  scrollNav();
+  showVideo();
 });
 // /*Scroll Animation Page*/
 // const sr = new ScrollReveal({
