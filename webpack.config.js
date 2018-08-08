@@ -73,41 +73,6 @@ module.exports = {
       filename: 'index.html',
       template: 'src/index.html',
     }),
-    new HtmlWebpackPlugin({
-      title: 'Vinhomes Products',
-      inject: true,
-      hash: true,
-      filename: 'products.html',
-      template: 'src/products.html',
-    }),
-    new HtmlWebpackPlugin({
-      title: 'Vinhomes Products Detail',
-      inject: true,
-      hash: true,
-      filename: 'product-details.html',
-      template: 'src/product-details.html',
-    }),
-    new HtmlWebpackPlugin({
-      title: 'Vinhomes Process',
-      inject: true,
-      hash: true,
-      filename: 'process.html',
-      template: 'src/process.html',
-    }),
-    new HtmlWebpackPlugin({
-      title: 'Vinhomes Process',
-      inject: true,
-      hash: true,
-      filename: 'process-details.html',
-      template: 'src/process-details.html',
-    }),
-    new HtmlWebpackPlugin({
-      title: 'Vinhomes Contacts',
-      inject: true,
-      hash: true,
-      filename: 'contacts.html',
-      template: 'src/contacts.html',
-    }),
     new CleanWebpackPlugin(['dist'])
   ]
 };

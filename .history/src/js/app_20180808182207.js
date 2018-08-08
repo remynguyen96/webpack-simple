@@ -1,7 +1,5 @@
 import '../css/app.scss';
 
-import 'jquery/dist/jquery.slim';
-
 function bubbleSort(arr) {
   const len = arr.length;
   for (let i = len - 1; i >= 0; i--) {
@@ -17,6 +15,5 @@ function bubbleSort(arr) {
 }
 
 
-// console.log(bubbleSort([7, 5, 2, 4, 10, 3, 9]));
 
-
+bubbleSort([7, 5, 2, 4, 10, 3, 9]);
