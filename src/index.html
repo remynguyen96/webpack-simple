@@ -6,18 +6,18 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#000000">
-  <meta property="og:url" content=""/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:title" content="Dòng thông tin Vinhomes Central Park - Tuyệt Vời Cuộc Sống Đô Thị."/>
-  <meta property="og:description" content="Introducing a Better Way to Create, Store and Exchange value."/>
-  <meta property="og:image" content="/src/images/favicon.ico"/>
+  <meta property="og:url" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Knockout JS" />
+  <meta property="og:description" content="Introducing a Better Way to Create, Store and Exchange value." />
+  <meta property="og:image" content="/src/images/favicon.ico" />
   <link rel="shortcut icon" href="/src/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=vietnamese" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <title>Vinhomes Central Park</title>
+  <title>Basic About Knockout JS</title>
 </head>
 <body>
-<!--ko if:false--><!--/ko-->
+<!--Part 1-->
+<!--ko if:false-->
 <p>Key Data Binding: <strong data-bind="text: changeKey"></strong></p>
 <input type="text" data-bind="value: changeKey">
 <button data-bind="click: showState">Show Current State</button>
@@ -27,7 +27,7 @@
 <p>Get Data Users: <strong data-bind="text: getData"></strong></p>
 <button type="button" data-bind="click: nextUser">Next User</button>
 <!--/Dependencies Tracking-->
-<p>Type stuff here: <input data-bind='textInput: instantaneousValue'/></p>
+<p>Type stuff here: <input data-bind="textInput: instantaneousValue" /></p>
 <p>Current delayed value: <b data-bind="text: delayedValue"></b></p>
 <div data-bind="visible: loggedValues().length > 0">
   <p>Logged Value</p>
@@ -38,7 +38,6 @@
 
 <div style="background: #80B2FF; padding: 20px" data-bind="text: computedLog">
 </div>
-
 <!--ko if: step() === 0-->
 <p>First name: <input data-bind="textInput: firstName" /></p>
 <!--/ko-->
@@ -49,7 +48,73 @@
 <div>Prefix: <select data-bind="value: prefix, options: ['Mr.', 'Ms.','Mrs.','Dr.']"></select></div>
 <h2>Hello, <span data-bind="text: fullName"> </span>!</h2>
 <!--/ko-->
-<p><button type="button" data-bind="click: nextStep">Next</button></p>
+<p>
+  <button type="button" data-bind="click: nextStep">Next</button>
+</p>
+<!--/ko-->
+<!--End Part 1-->
+
+<!--Part 2-->
+<!--ko if:false-->
+<h3>Your seat reservations (<span data-bind="text: seats().length"></span>)</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Passenger name</th>
+      <th>Meal</th>
+      <th>Surcharge</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody data-bind="foreach: seats">
+    <tr>
+      <td><input data-bind="value: name" /></td>
+      <td>
+        <select data-bind="options: $root.availabelMeals, value: meal, optionsText: 'mealName'"></select>
+      </td>
+      <!--<td><p data-bind="text: $root.availabelMeals[2].mealName"></p></td>-->
+      <td data-bind="text: formattedPrice"></td>
+      <td><a href="#" data-bind="click: $root.removeSeat">Remove reserve</a></td>
+    </tr>
+  </tbody>
+</table>
+<h3 data-bind="visible: totalSurcharge() > 0">
+  Total Surcharge: $<span data-bind="text: totalSurcharge().toFixed(2)"></span>
+</h3>
+<button type="button" data-bind="click: addSeat, enable: seats().length < 5">Reserve another seat</button>
+<button type="button" data-bind="click: orderReservation, enable: seats().length > 0">Order Reservation</button>
+<div style="background-color: #57ff89; color: #F9F9F9;padding: 20px;width: 650px;margin: 20px auto"
+     data-bind="visible: !isEmpty(result())">
+  <div>
+    <span style="font-size: 18px">Name</span>
+    <strong data-bind="text: result().name"></strong>
+  </div>
+  <div>
+    <span style="font-size: 18px">Total seats</span>
+    <strong data-bind="text: result().totalSeats"></strong>
+  </div>
+  <ul data-bind="foreach: result().seats">
+    <li>
+      <p style="font-size: 18px">
+        <span>Meal name</span>
+        <strong data-bind="text: mealName"></strong>
+      </p>
+      <p style="font-size: 18px">
+        <span>Price</span>
+        <strong data-bind="text: price"></strong>
+      </p>
+    </li>
+  </ul>
+  <div>
+    <span style="font-size: 18px">Total surcharge</span>
+    <strong data-bind="text: result().totalSurcharge"></strong>
+  </div>
+</div>
+<!--/ko-->
+<!--End Part 2-->
+
+<img src="images/product1.jpg" alt="">
+
 
 </body>
 </html>
