@@ -67,7 +67,7 @@ module.exports = {
   plugins: [
     extractPlugin,
     new HtmlWebpackPlugin({
-      title: 'Vinhomes Homepage',
+      title: 'Basic About Knockout JS',
       inject: true,
       hash: true,
       filename: 'index.html',
