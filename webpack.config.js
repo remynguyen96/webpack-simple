@@ -10,7 +10,7 @@ const extractPlugin = new ExtractTextPlugin({
 module.exports = {
   entry: ['babel-polyfill', './src/js/app.js'],
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'public'),
     filename: 'app.bundle.js',
   },
   module: {
@@ -108,6 +108,6 @@ module.exports = {
       filename: 'contacts.html',
       template: 'src/contacts.html',
     }),
-    new CleanWebpackPlugin(['dist'])
+    new CleanWebpackPlugin(['public'])
   ]
 };

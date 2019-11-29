@@ -1,5 +1,5 @@
-# webpack-simple made by Remy Nguyen
-This is webpack simple for frontend.
+# Application made by Remy Nguyen
+This is a simple application for frontend.
 * How to uses it ???
   => It's very simple
   Step 1: You need git clone (webpack for me)

@@ -1,6 +1,7 @@
 {
   "hosting": {
-    "public": "dist",
+    "public": "public",
+    "site": "funix-chau-nguyen",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -8,3 +9,4 @@
     ]
   }
 }
+
