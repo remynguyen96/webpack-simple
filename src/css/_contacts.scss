@@ -6,10 +6,12 @@
   height: 100%;
   position: relative;
   margin: 15px 0 35px;
+
   &-color {
     background-color: rgba(107, 147, 232, 0.54);
     height: 600px;
   }
+
   &-phone {
     position: absolute;
     top: 14%;
@@ -18,6 +20,7 @@
     opacity: 1;
     max-width: 150px;
   }
+
   &-txt {
     background: url(../images/border-contact.png) no-repeat;
     background-size: 100% 100%;
@@ -28,6 +31,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
     p {
       font-size: 2.2rem;
       font-weight: 400;
@@ -35,28 +39,34 @@
       text-align: center;
       line-height: 35px;
     }
+
     strong, b {
       font-weight: 600;
       font-size: 2.6rem;
     }
   }
 }
+
 .form-register {
   label {
     font-size: 1.6rem;
     margin-top: -8px;
   }
 }
+
 .input-field {
   margin-bottom: 2.5rem;
 }
+
 .btn-submit {
   text-align: center;
+
   button {
     font-size: 1.4rem;
     line-height: 40px;
     height: 40px;
     background-color: $blue;
+
     &:hover {
       background-color: $blueLighten2;
     }

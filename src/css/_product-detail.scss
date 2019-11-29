@@ -2,12 +2,15 @@
   position: absolute;
   z-index: 5;
   bottom: 5%;
+
   .page {
     &-sub-title {
       color: #ffffff;
     }
+
     &-title {
       color: #ffffff;
+
       &:before {
         content: "";
         border-top: 1px solid #ffffff;
@@ -15,25 +18,31 @@
     }
   }
 }
+
 .tabs-detail {
   margin-bottom: 40px;
 }
+
 .tabs {
   .indicator {
     background-color: $blueLighten4;
   }
+
   .tab a {
     color: rgba(113, 191, 255, 0.85);
     font-size: 1.8rem;
+
     &:hover, &.active {
       color: $blueLighten4;
       background-color: rgb(241, 250, 255);
     }
+
     &:focus {
       background-color: $blueLighten3;
-     &.active {
-       background-color: $blueLighten3;
-     }
+
+      &.active {
+        background-color: $blueLighten3;
+      }
     }
   }
 }
@@ -46,6 +55,7 @@
       color: $blue;
       line-height: 30px;
       padding-left: 35px;
+
       &:before {
         content: "";
         position: absolute;
@@ -55,18 +65,21 @@
         border-top: 2px solid $blueLighten1;
       }
     }
+
     img {
       max-width: 100%;
       height: auto;
       display: block;
       margin: 35px auto;
     }
+
     p {
       font-size: 1.6rem;
       font-weight: 400;
       color: $greyDarken2;
       line-height: 30px;
     }
+
     strong, b {
       font-weight: 600;
     }
