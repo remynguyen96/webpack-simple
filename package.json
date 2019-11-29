@@ -1,11 +1,11 @@
 {
-  "name": "webpack2-basics",
+  "name": "vinhome",
   "version": "1.0.0",
-  "description": "",
+  "description": "Landing page to introduce vinhomes made by Remy Nguyen",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --open --port 3500 --host 0.0.0.0",
+    "start": "webpack-dev-server --open --port 8800",
     "prepublish": "babel src/ -d lib/",
     "deploy": "firebase deploy",
     "build": "webpack -p"
