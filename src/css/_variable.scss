@@ -1,0 +1,108 @@
+$unit: 1rem;
+/*
+ * Color
+ * ======================================================================== */
+$hc-brand: #e21838;
+$hc-accent-color: #{$hc-brand};
+
+$hc-label: #767676;
+$hc-text: #666666;
+$hc-text-dark: #321d1d;
+$hc-text-light: #5a4141;
+$hc-text-lighter: #d2c3c3;
+
+$hc-ui-light: #f4f3f3;
+$hc-ui-lighter: #ffffff;
+$hc-ui-normal: #dfdddd;
+$hc-ui-dark: #988f90;
+$hc-ui-darker: #5e4f51;
+
+$hc-bg: #f2f2f2;
+$hc-gray: #d3d3d3;
+$hc-black: #221f1f;
+$hc-error: #f44336;
+$hc-success: #009688;
+
+/*
+ * Font size & weight
+ * ======================================================================== */
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semi: 600;
+
+$font-size: $unit; /* 16px */
+$font-size-tiny: calc(0.75 * #{$unit}); /* 12px */
+$font-size-small: calc(0.875 * #{$unit}); /* 14px */
+$font-size-normal: calc(0.9375 * #{$unit}); /* 15px */
+$font-size-big: calc(1.125 * #{$unit}); /* 18px */
+$font-size-extra-big: calc(1.25 * #{$unit}); /* 20px */
+$font-size-huge: calc(1.375 * #{$unit}); /* 22px */
+$font-size-more-huge: calc(1.5 * #{$unit}); /* 24px */
+
+/*
+ * Spacing
+ * ======================================================================== */
+$hc-space-3xs: 0.125rem; /* 2px */
+$hc-space-2xs: 0.25rem; /* 4px */
+$hc-space-1xs: 0.375rem; /* 6px */
+$hc-space-xs: 0.5rem; /* 8px */
+$hc-space-sxs: 0.625rem; /* 10px */
+$hc-space-sm: 0.75rem; /* 12px */
+$hc-space-smb: 0.875rem; /* 14px */
+$hc-space-md: 1rem; /* 16px */
+$hc-space-lg: 1.5rem; /* 24px */
+$hc-space-xl: 2rem; /* 32px */
+$hc-space-2xl: 2.5rem; /* 40px */
+$hc-space-3xl: 3rem; /* 48px */
+$hc-space-4xl: 3.5rem; /* 64px */
+
+/*
+  * Animation
+  * ======================================================================== */
+$animation-delay: 300ms;
+$animation-delay-fast: 100ms;
+$animation-duration: 350ms;
+$animation-duration-long: 2000ms;
+$animation-curve-fast-out-slow-in: cubic-bezier(0.4, 0, 0.2, 1);
+$animation-curve-linear-out-slow-in: cubic-bezier(0, 0, 0.2, 1);
+$animation-curve-fast-out-linear-in: cubic-bezier(0.4, 0, 1, 1);
+$animation-curve-default: $animation-curve-fast-out-slow-in;
+
+/*
+   * Indexes
+   * ======================================================================== */
+$z-index-high: 100;
+$z-index-normal: 1;
+$z-index-low: -100;
+
+/*
+   * Responsive
+   * ======================================================================== */
+
+$screen-xxs-min: "only screen and (min-width: 321px)"; /* Tiny small screen / mini phone */
+$screen-xs-min: "only screen and (min-width: 414px)"; /* Extra small screen / phone */
+$screen-sm-min: "only screen and (min-width: 767px)"; /* Small screen / tablet */
+$screen-md-min: "only screen and (min-width: 960px)"; /* Medium screen / desktop */
+$screen-lg-min: "only screen and (min-width: 1199px)"; /* Large screen / wide desktop small */
+$screen-xl-min: "only screen and (min-width: 1367px)"; /* Large screen / wide desktop */
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+@mixin multiTransition($variable) {
+  -webkit-transition: $variable;
+  -o-transition: $variable;
+  -moz-transition: $variable;
+  transition: $variable;
+}
+
+@mixin multiTranform($variable) {
+  -webkit-transform: $variable;
+  -o-transform: $variable;
+  -ms-transform: $variable;
+  -moz-transform: $variable;
+  transform: $variable;
+}
